@@ -25,10 +25,16 @@ server the site will be deployed on so that the URLs are correct.
 ### To develop: 
 
 1. Follow steps 1 - 4 from above
-2. Start the local dev server by running `gulp serve`. Your browser will automatically 
+2. Make your changes to files in assets folder!
+ - assets/jade -> HTML files
+ - assets/styles -> css files
+3. Do a local build again (`gulp build --env local`) to recompile the assets files. 
+4. Start the local dev server by running `gulp serve`. Your browser will automatically 
 open up `http://localhost:3000`, where you should see the site being served locally  
-3. Get cracking! Any changes made to any of the source files should 
+5. Get cracking! Any changes made to any of the source files should 
 automatically trigger browser reload courtesy of BrowserSync
+6. Happy with your changes? Do a build for production before submitting PR. 
+(`gulp build --env production`)
 
 If you don't see the assets, try running `gulp assets`, or failing that, manually copy 
 the static contents of `assets/img`, `assets/js` and `assets/video` over to the 
