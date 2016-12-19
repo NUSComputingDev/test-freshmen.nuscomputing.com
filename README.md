@@ -10,6 +10,9 @@ Staging site: https://meebleforp.com/projects/fop/
 This repo contains the source code to build the SoC FOP 2016 website. 
 The site is largely static, written in Jade and SASS with Bootstrap, a touch of 
 JavaScript with jQuery and built with Gulp. Pull requests welcome!  
+
+Jade(pug) Guide: https://pugjs.org/api/getting-started.html
+SASS Guide: http://sass-lang.com/guide
  
 ### To build: 
 
