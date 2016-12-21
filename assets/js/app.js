@@ -42,26 +42,14 @@ _.padLeft = function(s, l, c) {
 };
 
 var nav = $('nav.global');
-$(window).scroll(_.throttle(function(){
-  nav.toggleClass('full', $(window).scrollTop() > 0);
-}, 100));
+
+nav.addClass('full');
+  $('.full-only').addClass('active');
 
 $('.menu-btn').click(function(evt){
   $(this).toggleClass('activated');
   $('.full-only').toggleClass('active');
   evt.stopPropagation();
-});
-
-$('.show-menu').click(function (evt) {
-  nav.addClass('full');
-  $('.menu-btn').addClass('activated');
-  $('.full-only').addClass('active');
-  evt.stopPropagation();
-});
-
-$('body').click(function(){
-  $('.menu-btn').removeClass('activated');
-  $('.full-only').removeClass('active');
 });
 
 var videoBanner = $('.video-overlay');
