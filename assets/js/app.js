@@ -52,6 +52,11 @@ $('.menu-btn').click(function(evt){
   evt.stopPropagation();
 });
 
+$('body').click(function(){
+  $('.menu-btn').removeClass('activated');
+  $('.full-only').removeClass('active');
+});
+
 var videoBanner = $('.video-overlay');
 
 videoBanner.each(function () {
