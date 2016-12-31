@@ -182,4 +182,10 @@ body.event {
     h2 { color: $brand-rag; }
     img { border-color: $brand-rag; }
   }
+
+  &.event-bash .people {
+    border-color: $brand-bash;
+    h2 { color: $brand-bash; }
+    img { border-color: $brand-bash; }
+  }
 }
