@@ -62,8 +62,6 @@ ul.faces {
   }
 
   li {
-    opacity: .8;
-    transition: opacity .3s;
     text-align: center;
     margin: 6px 10px;
 
@@ -76,8 +74,6 @@ ul.faces {
       border-radius: 50%;
       transition: filter .3s;
 
-      -webkit-filter: grayscale(100%);
-      filter: grayscale(100%);
     }
 
     p {

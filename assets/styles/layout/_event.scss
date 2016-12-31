@@ -165,21 +165,27 @@ body.event {
     }
   }
   
-  &.event-fsc .people {
+  .event-fsc {
     border-color: $brand-fsc;
     h2 { color: $brand-fsc; }
     img { border-color: $brand-fsc; }
   }
 
-  &.event-fow .people {
+  .event-fow {
     border-color: $brand-fow;
     h2 { color: $brand-fow; }
     img { border-color: $brand-fow; }
   }
 
-  &.event-rag .people {
+  .event-rag {
     border-color: $brand-rag;
     h2 { color: $brand-rag; }
     img { border-color: $brand-rag; }
+  }
+
+  .event-bash {
+    border-color: $brand-bash;
+    h2 { color: $brand-bash; }
+    img { border-color: $brand-bash; }
   }
 }
