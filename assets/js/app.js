@@ -44,7 +44,6 @@ _.padLeft = function(s, l, c) {
 var nav = $('nav.global');
 
 nav.addClass('full');
-  $('.full-only').addClass('active');
 
 $('.menu-btn').click(function(evt){
   $(this).toggleClass('activated');
