@@ -102,22 +102,8 @@ block main
           | that you will make friendships that last beyond your university life. Be part 
           | of our Rag family today!
     
-  section.people
-    h2 Proudly brought to you by these awesome people
-
-    -var people = faces('img/rag/people', ['Director'])
-    ul.faces.directors
-      each person in people[0]
-        li
-          img(src=person.file, alt='')
-          p.name= person.name
-          p.job= person.job
-    
-    ul.faces.plebs
-      each person in people[1]
-        li
-          img(src=person.file, alt='')
-          p.name= person.name
-          p.job= person.job
-
+  section.people.event-rag
+    div.call.dark.text-center
+      a.btn.btn-primary.btn-lg(href=baseUrl + 'credits.html#rag')
+        | Credits
     include ../partials/credit
