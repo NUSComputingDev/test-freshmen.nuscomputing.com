@@ -46,4 +46,23 @@ block main
           p.name= person.name
           p.job= person.job
 
+  section.people.event-fow#fow
+    h2 Freshman Orientation Week is proudly brought to you by these awesome people
+
+    -var people = faces('img/fow/people', ['Director', 'Head'])
+
+    ul.faces.directors
+      each person in people[0]
+        li
+          img(src=person.file, alt='')
+          p.name= person.name
+          p.job= person.job
+
+    ul.faces.plebs
+      each person in people[1].concat(people[2])
+        li
+          img(src=person.file, alt='')
+          p.name= person.name
+          p.job= person.job
+
     include ../partials/credit
