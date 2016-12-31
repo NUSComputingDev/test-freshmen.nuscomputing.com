@@ -1,4 +1,4 @@
-extends ../layout/master
+
 extends ../layout/events
 
 prepend vars
@@ -9,7 +9,7 @@ block header
 
 block main
   section.people
-      h2 Proudly brought to you by these awesome people
+      h2 Freshmen Orientation Project 2016 is proudly brought to you by these awesome people
       
       -var people = faces('img/fop', ['Head'])
       
@@ -26,5 +26,24 @@ block main
             img(src=person.file, alt='')
             p.name= person.name
             p.job= person.job    
+
+  section.people.event-fsc#fsc
+      h2 Freshman Social Camp is proudly brought to you by these awesome people
       
+      -var people = faces('img/fsc/people', ['Director', 'Head'])
+        
+      ul.faces.directors
+        each person in people[0].concat(people[1])
+          li
+            img(src=person.file, alt='')
+            p.name= person.name
+            p.job= person.job
+      
+      ul.faces.plebs
+        each person in people[2]
+          li
+            img(src=person.file, alt='')
+            p.name= person.name
+            p.job= person.job
+
       include ../partials/credit
