@@ -19,3 +19,18 @@
     }
   }
 }
+
+.testimonial-table {
+  margin: auto 10%;
+}
+
+.testimonial-data {
+  min-width: 200px;
+  padding: 2.5% 5%;
+}
+
+@media (max-width: 700px) {
+  .testimonial-data {
+    display: inline-block;
+  }
+}

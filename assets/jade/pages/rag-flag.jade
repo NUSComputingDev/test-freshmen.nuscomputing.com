@@ -9,7 +9,7 @@ block heading
     span Bond
   h1.big 
     | RAG 
-  p.date May-August
+  p.date May to August
   
 block description
   p
@@ -49,7 +49,12 @@ block main
       | You can learn new moves with dance, or let your creativity run free with float 
       | and costumes. You don’t even have to have prior experience, just come down and 
       | you’ll be taught everything you need to know. 
-    figcaption Matt C., Year 1 CS student
+    figcaption Matt C., Year 3 CS student
+
+  section
+    a.btn.btn-primary.btn-lg.read-more(href='#more-about-rag')
+      | Click here to read more about RAG from your seniors!
+
   section.gallery
     figure
       div.img(style={'background-image': 'url(' + baseUrl + 'img/rag/rag4.jpg' + ')'})
@@ -95,29 +100,73 @@ block main
     
     figure
       div.img(style={'background-image': 'url(' + baseUrl + 'img/rag/rag6.jpg' + ')'})
-      .caption
+      .caption#more-about-rag
+        //
+          This is a hack. Do not do this at home.
         figcaption
           | A very last group photo at Rag, but definitely not the last of our friendships. 
           | After a summer of having supper together, training, and more supper, be sure 
           | that you will make friendships that last beyond your university life. Be part 
           | of our Rag family today!
-    
-  section.people
-    h2 Proudly brought to you by these awesome people
 
-    -var people = faces('img/rag/people', ['Director'])
-    ul.faces.directors
-      each person in people[0]
-        li
-          img(src=person.file, alt='')
-          p.name= person.name
-          p.job= person.job
-    
-    ul.faces.plebs
-      each person in people[1]
-        li
-          img(src=person.file, alt='')
-          p.name= person.name
-          p.job= person.job
+  section
+      center
+        h2
+          | What your seniors have to say about RAG!
+        table.testimonial-table
+          tr
+            td.testimonial-data
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              | tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              | quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              | consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              | cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              | proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              p
+                i Mysterious Senior A
+            td.testimonial-data
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              | tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              | quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              | consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              | cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              | proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              p
+                i Mysterious Senior B
+          tr
+            td.testimonial-data
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              | tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              | quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              | consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              | cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              | proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              p
+                i Mysterious Senior C
+
+  section.people
+    h2 Proudly brought to you by
+    //
+      these awesome people
+
+    center
+      a(href='http://nuscomputing.com', target='_blank')
+        img(src='img/ComputingClubLogo.png', alt='Computing Club', style="width: 75%;")
+
+    //
+      -var people = faces('img/rag/people', ['Director'])
+      ul.faces.directors
+        each person in people[0]
+          li
+            img(src=person.file, alt='')
+            p.name= person.name
+            p.job= person.job
+      
+      ul.faces.plebs
+        each person in people[1]
+          li
+            img(src=person.file, alt='')
+            p.name= person.name
+            p.job= person.job
 
     include ../partials/credit
