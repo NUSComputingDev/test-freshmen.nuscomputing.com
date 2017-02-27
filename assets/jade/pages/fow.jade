@@ -8,7 +8,7 @@ block heading
   p.aspect
     span Orientate
   h1 Freshmen Orientation Week
-  p.date 24-27 July
+  p.date 3 to 6 August
 
 block description
   p
@@ -29,7 +29,10 @@ block main
       | My FOW experience was great! Had lots of fun with the activities 
       | and it was good being able to get advice from my seniors 
       | before school starts
-    figcaption Jun Kiat, Year 1 CS student
+    figcaption Jun Kiat, Year 3 CS student
+  section
+    a.btn.btn-primary.btn-lg.read-more(href='#more-about-fow')
+      | Click here to read more about FOW from your seniors!
   section.gallery
     figure
       div.img(style={ 'background-image': 'url(' + baseUrl + 'img/fow/fow1.jpg' + ')' })
@@ -70,28 +73,72 @@ block main
         
     figure
       div.img(style={ 'background-image': 'url(' + baseUrl + 'img/fow/fow6.jpg' + ')'})
-      .caption.right
+      .caption.right#more-about-fow
+        //
+          This is a hack. Do not do this at home.
         figcaption
           | A huge camp photo at Sentosa, with house flags painted by your very own OGLs!
-    
+
+    section
+      center
+        h2
+          | What your seniors have to say about FOW!
+        table.testimonial-table
+          tr
+            td.testimonial-data
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              | tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              | quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              | consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              | cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              | proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              p
+                i Mysterious Senior A
+            td.testimonial-data
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              | tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              | quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              | consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              | cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              | proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              p
+                i Mysterious Senior B
+          tr
+            td.testimonial-data
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              | tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              | quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              | consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              | cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              | proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              p
+                i Mysterious Senior C
+
     section.people
-      h2 Proudly brought to you by these awesome people
+      h2 Proudly brought to you by
+      //
+        these awesome people
 
-      -var people = faces('img/fow/people', ['Director', 'Head'])
+      center
+        a(href='http://nuscomputing.com', target='_blank')
+          img(src='img/ComputingClubLogo.png', alt='Computing Club', style="width: 75%;")
 
-      ul.faces.directors
-        each person in people[0]
-          li
-            img(src=person.file, alt='')
-            p.name= person.name
-            p.job= person.job
-  
-      ul.faces.plebs
-        each person in people[1].concat(people[2])
-          li
-            img(src=person.file, alt='')
-            p.name= person.name
-            p.job= person.job
+      //
+        -var people = faces('img/fow/people', ['Director', 'Head'])
+
+        ul.faces.directors
+          each person in people[0]
+            li
+              img(src=person.file, alt='')
+              p.name= person.name
+              p.job= person.job
+    
+        ul.faces.plebs
+          each person in people[1].concat(people[2])
+            li
+              img(src=person.file, alt='')
+              p.name= person.name
+              p.job= person.job
 
       include ../partials/credit
     

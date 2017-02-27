@@ -8,7 +8,7 @@ block heading
   p.aspect
     span Socialize
   h1 Freshmen Social Camp
-  p.date 11-14 June
+  p.date 11 to 14 June
     
     
 block description
@@ -24,8 +24,12 @@ block main
     blockquote
       | It was the best camp among all the camps that I have gone for. Meeting my seniors and 
       | new friends and having fun together.
-    figcaption Chase Tiong, Year 1 CS student
+    figcaption Chase Tiong, Year 3 CS student
   
+  section
+    a.btn.btn-primary.btn-lg.read-more(href='#more-about-fsc')
+      | Click here to read more about FSC from your seniors!
+
   section.gallery
     figure
       div.img(style={ 'background-image': 'url(' + baseUrl + 'img/fsc/fsc1.jpg' + ')' })
@@ -68,27 +72,71 @@ block main
           | performance after four days of fun.
     figure
       div.img(style={'background-image': 'url(' + baseUrl + 'img/fsc/fsc6.jpg' + ')'})
-      div.caption.right
+      div.caption.right#more-about-fsc
+        //
+          This is a hack. Do not do this at home.
         figcaption
           | A huge camp photo at Sentosa, after a fun day of beach games!
 
+    section
+      center
+        h2
+          | What your seniors have to say about FSC!
+        table.testimonial-table
+          tr
+            td.testimonial-data
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              | tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              | quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              | consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              | cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              | proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              p
+                i Mysterious Senior A
+            td.testimonial-data
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              | tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              | quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              | consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              | cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              | proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              p
+                i Mysterious Senior B
+          tr
+            td.testimonial-data
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              | tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              | quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              | consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              | cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              | proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              p
+                i Mysterious Senior C
+
     section.people 
-      h2 Proudly brought to you by these awesome people
+      h2 Proudly brought to you by
+      //
+        these awesome people
+
+      center
+        a(href='http://nuscomputing.com', target='_blank')
+          img(src='img/ComputingClubLogo.png', alt='Computing Club', style="width: 75%;")
       
-      -var people = faces('img/fsc/people', ['Director', 'Head'])
+      //
+        -var people = faces('img/fsc/people', ['Director', 'Head'])
+          
+        ul.faces.directors 
+          each person in people[0].concat(people[1])
+            li
+              img(src=person.file, alt='')
+              p.name= person.name
+              p.job= person.job
         
-      ul.faces.directors 
-        each person in people[0].concat(people[1])
-          li
-            img(src=person.file, alt='')
-            p.name= person.name
-            p.job= person.job
-      
-      ul.faces.plebs
-        each person in people[2]
-          li
-            img(src=person.file, alt='')
-            p.name= person.name
-            p.job= person.job
+        ul.faces.plebs
+          each person in people[2]
+            li
+              img(src=person.file, alt='')
+              p.name= person.name
+              p.job= person.job
       
       include ../partials/credit

@@ -1,20 +1,22 @@
 extends ../layout/master
 
 block vars
-  - var title = 'Freshmen Orientation Project 2016 | NUS Computing';
+  - var title = 'Freshmen Orientation Project 2017 | NUS Computing';
   - var bodyClass = 'index';
   - var description = 'NUS School of Computing Freshmen Orientation Projects presents Virtutem Quattor. Join us to experience a summer like never before!'; 
     
 block header
   .hero
     .content
-      //h1
+      h1
         | Four Events.
         br
         | One Unforgettable Summer.
       .call
-        a.btn.btn-primary.btn-lg(href='https://www.facebook.com/SoCFOP/',target='_blank')
+        a.btn.btn-primary.btn-lg(href='https://www.facebook.com/SoCFOP/', target='_blank')
           | Connect With Us on Facebook
+        a.btn.btn-primary.btn-lg(href='http://tiny.cc/FOPMAILME', target='_blank')
+          | Join Our Mailing List
     .video-overlay(data-video=baseUrl + 'video/background.mp4')
       button(type='button').btn.btn-default
         i.fa.fa-pause
@@ -27,7 +29,7 @@ block main
       | Are you an incoming freshman who wants to find out more about the school? Or do you simply
       | want to make some friends and have fun?
     p
-      | NUS Computing Freshmen Orientation Projects (FOP) 2016 presents to you 
+      | NUS Computing Freshmen Orientation Projects (FOP) 2017 presents to you 
       em Virtutem Quattuor. 
       | With an exciting lineup of events, we will help you integrate into our Computing family in no time. At
       | FOP, not only do you get the opportunity to meet other incoming freshmen, you will also meet
@@ -40,7 +42,7 @@ block main
         p.aspect 
           span Socialize
         h2 Freshmen Social Camp
-        p.date 11-14 June
+        p.date 11 to 14 June
         
         .description
           p 
@@ -51,7 +53,7 @@ block main
         p.aspect 
           span Orientate
         h2 Freshmen Orientation Week
-        p.date 24-27 July
+        p.date 3 to 6 August
         
         .description
           p 
@@ -68,7 +70,7 @@ block main
           span.amp & 
           | FLAG 
         
-        p.date May-August
+        p.date May to August
         
         .description
           p 
@@ -80,7 +82,7 @@ block main
         p.aspect 
           span Celebrate 
         h2 Bash 
-        p.date 12 August
+        p.date 18 August
         
         .description
           p 
@@ -91,151 +93,178 @@ block main
     .timeline
       header
         h2 Timeline of events
-        a.btn.btn-primary(href='https://calendar.google.com/calendar/embed?src=mpenqpun7rjhup57d2cscg0i88%40group.calendar.google.com&ctz=Asia/Singapore',target='_blank')
-          | View in Google Calendar 
+        //
+          a.btn.btn-primary(href='https://calendar.google.com/calendar/embed?src=mpenqpun7rjhup57d2cscg0i88%40group.calendar.google.com&ctz=Asia/Singapore',target='_blank')
+            | View in Google Calendar 
 
       h3 June
       
       ul
+        li
+          .tl-date 3#[sup rd]
+          .tl-desc RAG Introduction
+
         li 
-          .tl-date 11-14 
+          .tl-date 11 to 14 
           .tl-desc Freshmen Social Camp (FSC)
         
         li
-          .tl-date 17 
-          .tl-desc RAG Induction
-      
+          .tl-date 17, 18 
+          .tl-desc RAG Exposure Program
+
+        li
+          .tl-date 21
+          .tl-desc RAG Commencement
+          
+        li
+          .tl-date TBC
+          .tl-desc FOP Beneficiary Engagement
+
       h3 July
-      
+
       ul
-        li 
-          .tl-date 5  
-            span.time 1230 - 1700
-          .tl-desc
-            h4: a(href='https://mysurvey.nus.edu.sg/EFM/se.ashx?s=54CCD14B71864EB3', target='_blank')
-              | FOP Beneficiary Engagement (Senior Class) 
-            p
-              strong Location: 
-              a(href='https://www.google.com.sg/maps/place/MINDS+Fernvale+SPED+school/@1.3899433,103.8729606,17z/data=!4m8!1m2!2m1!1sFernvale+Gardens+School,+7+Fernvale+Road,+Singapore+(797635)!3m4!1s0x0:0x445ebd4dd69b1ba5!8m2!3d1.390141!4d103.8752604?hl=en', target='_blank')
-                | Fernvale Gardens School - 7 Fernvale Road
-        
-        li
-          .tl-date 7  
-            span.time 0800 - 1230
-          .tl-desc
-            h4: a(href='https://mysurvey.nus.edu.sg/EFM/se.ashx?s=54CCD14B71864EB3', target='_blank')
-              | FOP Beneficiary Engagement (Junior Class) 
-            p
-              strong Location: 
-              a(href='https://www.google.com.sg/maps/place/MINDS+Fernvale+SPED+school/@1.3899433,103.8729606,17z/data=!4m8!1m2!2m1!1sFernvale+Gardens+School,+7+Fernvale+Road,+Singapore+(797635)!3m4!1s0x0:0x445ebd4dd69b1ba5!8m2!3d1.390141!4d103.8752604?hl=en', target='_blank')
-                | Fernvale Gardens School - 7 Fernvale Road
-        
-        li
-          .tl-date 8
-            span.time 1000 - 1200
-          .tl-desc
-            h4: a(href='http://ww1.math.nus.edu.sg/undergrad.aspx?f=stu-1301test',target='_blank') 
-              | MA1301 Introductory Mathematics Proficiency Test
-            p
-              strong Sign up deadline: 
-              | 4 July - 1700 hrs, Office of Undergraduate Studies
+        //
+          li 
+            .tl-date 5  
+              span.time 1230 to 1700
+            .tl-desc
+              h4: a(href='https://mysurvey.nus.edu.sg/EFM/se.ashx?s=54CCD14B71864EB3', target='_blank')
+                | FOP Beneficiary Engagement (Senior Class) 
+              p
+                strong Location: 
+                a(href='https://www.google.com.sg/maps/place/MINDS+Fernvale+SPED+school/@1.3899433,103.8729606,17z/data=!4m8!1m2!2m1!1sFernvale+Gardens+School,+7+Fernvale+Road,+Singapore+(797635)!3m4!1s0x0:0x445ebd4dd69b1ba5!8m2!3d1.390141!4d103.8752604?hl=en', target='_blank')
+                  | Fernvale Gardens School - 7 Fernvale Road
 
-        li
-          .tl-date 11, 12, 14 
-            span.time 0900 - 1700
-              br
-              | LT15 at AS6
-          .tl-desc
-            h4: a(href='http://www.comp.nus.edu.sg/programmes/ug/fpw/refresher/',target='_blank')
-              | Programming Refresher Workshop for Poly students
-            p
-              strong Sign up deadline: 
-              | 10 June
-            p 
-              | This problem-based refresher workshop will guide participants through 
-              | several problem-solving exercises which are commonly covered in 
-              | #[a.module(title='Programming Methodology',href='https://nusmods.com/modules/CS1010') CS1010]  
-              | (or its equivalent). Programming skills covered include: array manipulation, 
-              | iterations, recursion, sorting and searching. Corresponding problem-solving 
-              | skills covered include: manipulation of both collections of homogeneous 
-              | data and numerical data through repetitive process and divide-and-conquer 
-              | method.
-        li 
-          .tl-date 12
-            span.time 1400 - 1600
-          .tl-desc
-            h4: a(href='http://www.comp.nus.edu.sg/programmes/ug/exemptions/a-levels/',target='_blank')
-              | CS1010 Placement Tests for Polytechnic Diploma and 'A' level holders  
-            p
-              strong Sign up deadline: 
-              | 4 July - 1700 hrs, Office of Undergraduate Studies
+        //
+          li
+            .tl-date 7  
+              span.time 0800 to 1230
+            .tl-desc
+              h4: a(href='https://mysurvey.nus.edu.sg/EFM/se.ashx?s=54CCD14B71864EB3', target='_blank')
+                | FOP Beneficiary Engagement (Junior Class) 
+              p
+                strong Location: 
+                a(href='https://www.google.com.sg/maps/place/MINDS+Fernvale+SPED+school/@1.3899433,103.8729606,17z/data=!4m8!1m2!2m1!1sFernvale+Gardens+School,+7+Fernvale+Road,+Singapore+(797635)!3m4!1s0x0:0x445ebd4dd69b1ba5!8m2!3d1.390141!4d103.8752604?hl=en', target='_blank')
+                  | Fernvale Gardens School - 7 Fernvale Road
 
-        li
-          .tl-date 13 
-            span.time 0930 - 1045
-          .tl-desc
-            h4: a(href='http://www.nus.edu.sg/celc/programmes/qet.php',target='_blank') 
-              | Qualifying English Test (QET)
-            p
-              strong Sign up deadline: 
-              | 5 July
-            p 
-              | The QET is an English Language test set by the Centre for English Language Communication. 
-              | It must be taken by students who do not possess the necessary English Language 
-              | qualifications when they enter the university.
-        
-        li
-          .tl-date 18 
-            span.time 0930 - 1630
-              br
-              a(href='https://www.google.com.sg/maps/place/i3+Auditorium/@1.2926939,103.7733481,17z/data=!3m1!4b1!4m5!3m4!1s0x31da1a558be07db5:0x19fbcf7c5d63f179!8m2!3d1.2926939!4d103.7755368?hl=en',target='_blank') 
-                | i3 Auditorium  
-          .tl-desc 
-            h4: a(href='http://www.comp.nus.edu.sg/programmes/ug/useful-links/',target='_blank')
-              | Faculty and Department Briefing
-            p
-              | Faculty Briefing (CS/IS/Business Analytics/Information Security courses) and 
-              | #[abbr(title='Centralised Online Undergraduates Registration System') CORS] 
-              | Briefing in the morning, and CS Department Programme Briefing followed by 
-              | about your 1#[sup st] programming course in CS1010 or CS1101S in the afternoon.
-        
-        li
-          .tl-date 
-            | 19, 20, 22
-            span.time 0900 - 1700
-              br
-              | Seminar Room 1 at COM1
-          .tl-desc
-            h4: a(href='http://www.comp.nus.edu.sg/programmes/ug/fpw/ipw/',target='_blank') 
-              | Introduction to Programming Workshop for JC students
-            p
-              strong Sign up deadline: 
-              | 10 June
-            p
-              | A workshop designed to answer questions like “What is programming? Is programming 
-              | hard?” It is targeted at students who have #[strong never] programmed before 
-              | and have absolutely no idea what programming is.
-            
-        li
-          .tl-date 24 - 27 
-          .tl-desc Freshmen Orientation Week (FOW)
-        
-        li
-          .tl-date 28 - 29
-          .tl-desc 
-            h4 
-              abbr(title='Centralised Online Undergraduates Registration System') CORS
-              |  Bidding Round 1C
-        
+        //
+          li
+            .tl-date 8
+              span.time 1000 to 1200
+            .tl-desc
+              h4: a(href='http://ww1.math.nus.edu.sg/undergrad.aspx?f=stu-1301test',target='_blank') 
+                | MA1301 Introductory Mathematics Proficiency Test
+              p
+                strong Sign-up deadline: 
+                | 4 July - 1700 hrs, Office of Undergraduate Studies
+
+        //
+          li
+            .tl-date 11, 12, 14 
+              span.time 0900 to 1700
+                br
+                | LT15 at AS6
+            .tl-desc
+              h4: a(href='http://www.comp.nus.edu.sg/programmes/ug/fpw/refresher/',target='_blank')
+                | Programming Refresher Workshop for Poly students
+              p
+                strong Sign-up deadline: 
+                | 10 June
+              p 
+                | This problem-based refresher workshop will guide participants through 
+                | several problem-solving exercises which are commonly covered in 
+                | #[a.module(title='Programming Methodology',href='https://nusmods.com/modules/CS1010') CS1010]  
+                | (or its equivalent). Programming skills covered include: array manipulation, 
+                | iterations, recursion, sorting and searching. Corresponding problem-solving 
+                | skills covered include: manipulation of both collections of homogeneous 
+                | data and numerical data through repetitive process and divide-and-conquer 
+                | method.
+
+        //
+          li 
+            .tl-date 12
+              span.time 1400 to 1600
+            .tl-desc
+              h4: a(href='http://www.comp.nus.edu.sg/programmes/ug/exemptions/a-levels/',target='_blank')
+                | CS1010 Placement Tests for Polytechnic Diploma and 'A' level holders  
+              p
+                strong Sign-up deadline: 
+                | 4 July - 1700 hrs, Office of Undergraduate Studies
+
+        //
+          li
+            .tl-date 13 
+              span.time 0930 to 1045
+            .tl-desc
+              h4: a(href='http://www.nus.edu.sg/celc/programmes/qet.php',target='_blank') 
+                | Qualifying English Test (QET)
+              p
+                strong Sign-up deadline: 
+                | 5 July
+              p 
+                | The QET is an English Language test set by the Centre for English Language Communication. 
+                | It must be taken by students who do not possess the necessary English Language 
+                | qualifications when they enter the university.
+
+        //
+          li
+            .tl-date 18 
+              span.time 0930 to 1630
+                br
+                a(href='https://www.google.com.sg/maps/place/i3+Auditorium/@1.2926939,103.7733481,17z/data=!3m1!4b1!4m5!3m4!1s0x31da1a558be07db5:0x19fbcf7c5d63f179!8m2!3d1.2926939!4d103.7755368?hl=en',target='_blank') 
+                  | i3 Auditorium  
+            .tl-desc 
+              h4: a(href='http://www.comp.nus.edu.sg/programmes/ug/useful-links/',target='_blank')
+                | Faculty and Department Briefing
+              p
+                | Faculty Briefing (CS/IS/Business Analytics/Information Security courses) and 
+                | #[abbr(title='Centralised Online Undergraduates Registration System') CORS] 
+                | Briefing in the morning, and CS Department Programme Briefing followed by 
+                | about your 1#[sup st] programming course in CS1010 or CS1101S in the afternoon.
+
+        //
+          li
+            .tl-date 
+              | 19, 20, 22
+              span.time 0900 to 1700
+                br
+                | Seminar Room 1 at COM1
+            .tl-desc
+              h4: a(href='http://www.comp.nus.edu.sg/programmes/ug/fpw/ipw/',target='_blank') 
+                | Introduction to Programming Workshop for JC students
+              p
+                strong Sign-up deadline: 
+                | 10 June
+              p
+                | A workshop designed to answer questions like "What is programming? Is programming 
+                | hard?" It is targeted at students who have #[strong never] programmed before 
+                | and have absolutely no idea what programming is.
+
+        //
+          li
+            .tl-date 28, 29
+            .tl-desc 
+              h4 
+                abbr(title='Centralised Online Undergraduates Registration System') CORS
+                |  Bidding Round 1C
+
         li 
-          .tl-date 29
-          .tl-desc Academic Day 
-      
+          .tl-date 31
+          .tl-desc FOP Beneficiary Engagement
+
       h3 August
-      
+
       ul
-        li
+        li 
           .tl-date 1#[sup st]
+          .tl-desc Academic Day
+
+        li
+          .tl-date 3 to 6
+          .tl-desc Freshmen Orientation Week (FOW)
+
+        li
+          .tl-date 7
             span.time 
               a(href='https://www.google.com.sg/maps/place/University+Cultural+Centre/@1.3015111,103.7696919,17z/data=!3m1!4b1!4m5!3m4!1s0x31da1af6fa0e402f:0xd7b19dcc6f0f4ca7!8m2!3d1.3015111!4d103.7718806?hl=en',target='_blank') 
                 | University Cultural Centre
@@ -248,45 +277,53 @@ block main
               | the newly-matriculated freshmen into the University. The ceremony features The FIC 
               | Musical, a light-hearted, tongue-in-cheek musical production which depicts the chronicles 
               | of NUS students throughout their university life. 
-            
+
         li
-          .tl-date 2 
+          .tl-date 8
           .tl-desc Flag Day
-        
-        li
-          .tl-date 3
-            span.time 1415 - 1730
-          .tl-desc
-            h4 Dean’s Welcome to All Freshmen
-            p 
-              | COM1 Level 2 Room 6 (Seminar Room 1) & COM1 Level 2 Foyer
-        
-        li
-          .tl-date 6 
-          .tl-desc RAG Day
-        
+
+        //
+          li
+            .tl-date 3
+              span.time 1415 to 1730
+            .tl-desc
+              h4 Dean’s Welcome to All Freshmen
+              p 
+                | COM1 Level 2 Room 6 (Seminar Room 1) & COM1 Level 2 Foyer
+
         li
           .tl-date 12 
+          .tl-desc RAG Day
+
+        li
+          .tl-date 18 
           .tl-desc Bash
-      
-  
+
+
   section.people
-    h2 Proudly brought to you by these awesome people
+    h2 Proudly brought to you by
+    //
+      these awesome people
+
+    center
+      a(href='http://nuscomputing.com', target='_blank')
+        img(src='img/ComputingClubLogo.png', alt='Computing Club', style="width: 75%;")
     
-    -var people = faces('img/fop', ['Head'])
-    
-    ul.faces.directors
-      each person in people[0]
-        li
-          img(src=person.file, alt='')
-          p.name= person.name
-          p.job= person.job
-    
-    ul.faces.plebs
-      each person in people[1]
-        li
-          img(src=person.file, alt='')
-          p.name= person.name
-          p.job= person.job    
-    
+    //
+      - var people = faces('img/fop', ['Head'])
+      
+      ul.faces.directors
+        each person in people[0]
+          li
+            img(src=person.file, alt='')
+            p.name= person.name
+            p.job= person.job
+      
+      ul.faces.plebs
+        each person in people[1]
+          li
+            img(src=person.file, alt='')
+            p.name= person.name
+            p.job= person.job
+      
     include ../partials/credit
