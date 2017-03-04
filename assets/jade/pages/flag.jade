@@ -1,59 +1,37 @@
 extends ../layout/events
 
 prepend vars
-  - var event = 'RAG & FLAG';
-  - var eventShort = 'rag'
+  - var event = 'FLAG';
+  - var eventShort = 'flag'
 
 block heading
   p.aspect 
-    span Bond
+    span Volunteer
   h1.big 
-    | RAG 
-  p.date May to August
+    | FLAG 
+  p.date 8 August
   
 block description
   p
-    | RAG is one of the biggest freshmen orientation events held by NUSSU, providing a 
-    | stage to showcase the creativity and talent of students from individual faculties. 
-    | This is our way of showing appreciation to our sponsors and the public who have 
-    | donated generously to us. Raggers, as we call ourselves, consists of floaters 
-    | who work on incredible float designs, dancers who stage jaw-dropping performances, 
-    | make-up artists who create our image and costume designers who make us shine. 
-  p
-    | We raggers are a family; freshmen to alumni, we’re constantly growing. Raggers form 
-    | strong friendships and unforgettable experiences that last throughout their 
-    | undergraduate years. Be a part of our family today!
+    | Other than the exciting preparations for RAG day, there will also be a chance for 
+    | you to give back to the society by joining our FLAG events. We will be going 
+    | down to our beneficiary’s, Fernvale Gardens School for a fulfilling day of 
+    | interaction with their residents through fun activities. On top of that, 
+    | join us on our quest to give back to society by raising funds for 
+    | Fernvale Gardens School on FLAG day, which will be happening on the 8th of August!
 
 block main
-  .flag.hero
-    .heading
-      p.aspect
-        span Volunteer
-      h1.big
-        | FLAG
-      p.date August
-    
-    .description
-      p
-        | Other than the exciting preparations for RAG day, there will also be a chance for 
-        | you to give back to the society by joining our FLAG events. We will be going 
-        | down to our beneficiary’s, Fernvale Gardens School for a fulfilling day of 
-        | interaction with their residents through fun activities. On top of that, 
-        | join us on our quest to give back to society by raising funds for 
-        | Fernvale Gardens School on FLAG day, which will be happening on the 2nd of August!
-    .and &
-  
   figure.testimonial
     blockquote
-      | RAG is an amazing opportunity to try something different, to learn something new. 
+      | FLAG is an amazing opportunity to try something different, to learn something new. 
       | You can learn new moves with dance, or let your creativity run free with float 
       | and costumes. You don’t even have to have prior experience, just come down and 
       | you’ll be taught everything you need to know. 
     figcaption Matt C., Year 3 CS student
 
   section
-    a.btn.btn-primary.btn-lg.read-more(href='#more-about-rag')
-      | Click here to read more about RAG from your seniors!
+    a.btn.btn-primary.btn-lg.read-more(href='#more-about-flag')
+      | Click here to read more about FLAG from your seniors!
 
   section.gallery
     figure
@@ -100,7 +78,7 @@ block main
     
     figure
       div.img(style={'background-image': 'url(' + baseUrl + 'img/rag/rag6.jpg' + ')'})
-      .caption#more-about-rag
+      .caption#more-about-flag
         //
           This is a hack. Do not do this at home.
         figcaption
@@ -112,7 +90,7 @@ block main
   section
       center
         h2
-          | What your seniors have to say about RAG!
+          | What your seniors have to say about FLAG!
         table.testimonial-table
           tr
             td.testimonial-data

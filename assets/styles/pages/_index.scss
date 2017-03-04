@@ -187,6 +187,12 @@ body.index {
       .aspect span, p.date { background: $brand-rag; }
     }
 
+    &.flag {
+      background-image: url('#{$image-base}/RAG8.jpg');
+      border-color: $brand-flag;
+      .aspect span, p.date { background: $brand-flag; }
+    }
+
     &.bash {
       background-image: url('#{$image-base}/BASH.jpg');
       border-color: $brand-bash;
