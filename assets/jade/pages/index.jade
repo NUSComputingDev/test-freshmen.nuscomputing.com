@@ -9,7 +9,7 @@ block header
   .hero
     .content
       h1
-        | Four Events.
+        | Five Events.
         br
         | One Unforgettable Summer.
       .call
@@ -37,7 +37,7 @@ block main
       | this summer for the best freshmen experience you’ll ever have!
 
   section.projects
-    .project-row
+      // .project-row
       a(href=url('fsc')).project.fsc
         p.aspect 
           span Socialize
@@ -60,15 +60,15 @@ block main
             | Orientate yourself! Get more familiar with the school 
             | environment and find out more about school life!
 
-
-    .project-row
-      a(href=url('rag-flag')).project.rag
+      // .project-row
+      a(href=url('rag')).project.rag
         p.aspect 
           span Bond
         h2 
           | RAG 
-          span.amp & 
-          | FLAG 
+          //
+            span.amp &
+            | FLAG
         
         p.date May to August
         
@@ -76,8 +76,24 @@ block main
           p 
             | Bond together as one SoC family! Construct magnificent 
             | floats and dance together to show our SoC spirit!
-            
-          
+
+      a(href=url('flag')).project.flag
+        p.aspect
+          span Volunteer
+        h2
+          //
+            | RAG
+            span.amp &
+          | FLAG
+
+        p.date 8 August
+
+        .description
+          p
+            | Volunteer together as one SoC family! Raise funds and
+            | nurture our SoC spirit of love and kindness!
+
+      // .project-row
       a(href=url('bash')).project.bash
         p.aspect 
           span Celebrate 

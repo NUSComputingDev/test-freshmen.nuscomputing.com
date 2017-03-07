@@ -74,7 +74,7 @@ body.index {
       flex: 1 1 auto;
     }
 
-    @media (max-width: $screen-lg) {
+    @media (max-width: 768px) { // width of 768px of lower -> 1 column
       display: block;
     }
     
@@ -91,7 +91,8 @@ body.index {
   
   .project {
     display: flex;
-    flex: 1 1 50%;
+    // flex: 1 1 50%;
+    flex: 1 1 auto;
     flex-direction: column;
     align-content: stretch;
 
@@ -120,10 +121,11 @@ body.index {
     h2 {
       margin-top: 0;
       font-weight: 600;
+      height: 60px;
       line-height: 1;
 
       @media (min-width: $screen-lg) and (max-width: 1600px) {
-        height: 70px;
+        height: 100px;
         display: flex;
         align-items: flex-end;
       }
@@ -183,6 +185,12 @@ body.index {
       background-image: url('#{$image-base}/RAG8.jpg');
       border-color: $brand-rag;
       .aspect span, p.date { background: $brand-rag; }
+    }
+
+    &.flag {
+      background-image: url('#{$image-base}/RAG8.jpg');
+      border-color: $brand-flag;
+      .aspect span, p.date { background: $brand-flag; }
     }
 
     &.bash {
