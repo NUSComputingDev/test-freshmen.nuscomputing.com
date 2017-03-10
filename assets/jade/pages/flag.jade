@@ -1,0 +1,161 @@
+extends ../layout/events
+
+prepend vars
+  - var event = 'FLAG';
+  - var eventShort = 'flag'
+
+block heading
+  p.aspect 
+    span Volunteer
+  h1.big 
+    | FLAG 
+  p.date 8 August
+  
+block description
+  p
+    | An integral part of NUSSU RAG & FLAG event, FLAG is your opportunity to give back 
+    | to society! Join us in raising funds on FLAG day which will happen on the 8th of 
+    | August. Funds raised will go to our beneficiary - Fernvale Gardens School - to support 
+    | their operations and improve students welfare. You can also sign up as a volunteer to 
+    | interact with our beneficiary, brighten up the lives of the students, and know who 
+    | you're really flagging for on FLAG day!
+
+block main
+  figure.testimonial
+    blockquote
+      | I interacted with students who were intellectually challenged and found it to be 
+      | a very meaningful experience. FLAG gave me the opportunity to better understand 
+      | and really see who we are flagging for and this further strengthens the true 
+      | meaning and purpose of FLAG.
+    figcaption Caryn Heng, Year 1 Business Analytics Student
+
+  section
+    a.btn.btn-primary.btn-lg.read-more(href='#more-about-flag')
+      | Click here to read more about FLAG from your seniors!
+
+  section.gallery
+    figure
+      div.img(style={'background-image': 'url(' + baseUrl + 'img/flag/1.jpg' + ')'})
+      .caption.right
+        figcaption
+          | Rag and Flag isn’t complete without our Flag component. This year, we will be 
+          | planning a lineup of activities and games for our residents at Fernvale Gardens 
+          | School. Join us in this meaningful day as we give back to the society. We will 
+          | also be having a Flag day in August for you to do a little something for our 
+          | beneficiary. 
+    figure
+      div.img(style={ 'background-image': 'url(' + baseUrl + 'img/flag/2.JPG' + ')' })
+      .caption
+        figcaption
+          | Beyond raising support for our beneficiaries, Flag also presents us the 
+          | opportunity to interact with the students of Fernville Garden School. Come to 
+          | give your time and attention to these students, and leave with your heart even 
+          | fuller than before! 
+    figure
+      div.img(style={ 'background-image': 'url(' + baseUrl + 'img/flag/3.JPG' + ')' })
+      .caption.right
+        figcaption
+          | This year, we have organised two Beneficiary Engagement Days, one after FSC and 
+          | another before FOW. Join us in the 1st session as an OG to strengthen your 
+          | budding friendships, or take this opportunity to know your OG mates before the 
+          | actual FOW camp starts in the 2nd session!
+    figure
+      div.img(style={ 'background-image': 'url(' + baseUrl + 'img/flag/4.JPG' + ')'})
+      .caption
+        figcaption
+          | The completed palm print rainbow and a final group shot to end the day! The mass 
+          | palm print rainbow created with the students last year represents hope and love, 
+          | the two values we hold for Flag!
+
+    figure
+      div.img(style={ 'background-image': 'url(' + baseUrl + 'img/flag/5.jpeg' + ')' })
+      .caption
+        figcaption
+          | Of course, who can forget FLAG day, a day of raising support for our 
+          | beneficiary! Take the chance to step out of your comfort zones for a meaningful 
+          | experience, as we spread out all around Singapore to raise funds together.
+    
+    figure
+      div.img(style={'background-image': 'url(' + baseUrl + 'img/flag/6.jpg' + ')'})
+      .caption#more-about-flag
+        //
+          This is a hack. Do not do this at home.
+        figcaption
+          | A final photo to wrap up the FLAG experience, but the memories live on. We 
+          | invite you to join us on this meaningful journey in 2017! Hand in hand, let’s 
+          | start by making a small difference in whatever ways we can, as one SoC. 
+
+  section
+      center
+        h2
+          | What your seniors have to say about FLAG!
+        table.testimonial-table
+          tr
+            td.testimonial-data
+              | FLAG gave me the valuable opportunity to give back to society, completing 
+              | the orientation package. It enabled me to further understand what it meant 
+              | to touch the lives of others. Though it wasn’t easy communicating with the 
+              | students, we managed to teach them a variety of things such as purchasing 
+              | and colouring. All you need is 2Ps - patience & perseverance - to put a 
+              | smile on their faces, plant the seed of hope in them, and brighten up their 
+              | lives that little bit more. 
+              p
+                i Francis Lee, Year 1 Computer Engineering Student
+            td.testimonial-data
+              | It was a meaningful experience raising funds for our beneficiary Fernvale 
+              | Garden School through FLAG day and going down to the school for engagement 
+              | sessions with the students. It was definitely a great experience as we could 
+              | bond with the students whom we are raising funds for even though it was 
+              | difficult to get close to them initially. Nevertheless, I had an amazing 
+              | time with my newly-found friends from FSC and the students from the school!
+              p
+                i Vanessa Loh, Year 1 Information Systems Student
+          tr
+            td.testimonial-data
+              | FLAG was an enriching experience for me. Interacting with the kids at our 
+              | beneficiary made me realise just how small and feeble an individual’s effort 
+              | make on the lives of these kids. We need more awareness and help for them. 
+              | All I can do is make them smile for a day but with the help of the general 
+              | public’s generous donations, the beneficiaries will have more funds to truly 
+              | help them assimilate back into society.
+              p
+                i Zachary Lim, Year 2 Computer Science Student
+            td.testimonial-data
+              | It was one of the most meaningful experiences I have ever had. I've 
+              | never been a huge "kids person", but I felt so welcomed by the children 
+              | there. Even though the activities that we planned for them were fairly 
+              | simple, I could see that they really enjoyed themselves. You could see how 
+              | much the children appreciated our effort, just by the look of joy in their 
+              | eyes. By the end of the day, many of us had forged such strong bonds with 
+              | them that it was really hard to say goodbye. It felt like they were 
+              | contented just spending time with us. It left me wanting to do so much more 
+              | for them.
+              p
+                i Te(Ting) Sze Ying, Year 3 Computer Science Student
+
+  section.people
+    h2 Proudly brought to you by
+    //
+      these awesome people
+
+    center
+      a(href='http://nuscomputing.com', target='_blank')
+        img(src='img/ComputingClubLogo.png', alt='Computing Club', style="width: 75%;")
+
+    //
+      -var people = faces('img/flag/people', ['Director'])
+      ul.faces.directors
+        each person in people[0]
+          li
+            img(src=person.file, alt='')
+            p.name= person.name
+            p.job= person.job
+      
+      ul.faces.plebs
+        each person in people[1]
+          li
+            img(src=person.file, alt='')
+            p.name= person.name
+            p.job= person.job
+
+    include ../partials/credit
