@@ -64,12 +64,9 @@ block main
       a(href=url('rag')).project.rag
         p.aspect 
           span Bond
-        h2 
-          | RAG 
-          //
-            span.amp &
-            | FLAG
-        
+        h2
+          | RAG
+
         p.date May to August
         
         .description
@@ -81,9 +78,6 @@ block main
         p.aspect
           span Volunteer
         h2
-          //
-            | RAG
-            span.amp &
           | FLAG
 
         p.date 8 August
@@ -318,28 +312,9 @@ block main
 
   section.people
     h2 Proudly brought to you by
-    //
-      these awesome people
 
     center
       a(href='http://nuscomputing.com', target='_blank')
-        img(src='img/ComputingClubLogo.png', alt='Computing Club', style="width: 75%;")
-    
-    //
-      - var people = faces('img/fop', ['Head'])
-      
-      ul.faces.directors
-        each person in people[0]
-          li
-            img(src=person.file, alt='')
-            p.name= person.name
-            p.job= person.job
-      
-      ul.faces.plebs
-        each person in people[1]
-          li
-            img(src=person.file, alt='')
-            p.name= person.name
-            p.job= person.job
-      
+        img(src='img/ComputingClubLogo.png', alt='Computing Club', class='people-compclub')
+
     include ../partials/credit
