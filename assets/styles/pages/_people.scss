@@ -45,19 +45,31 @@ ul.faces {
 
   &.directors li {
     width: 160px;
+    img {
+      height: 160px;
+    }
   }
 
   &.plebs li {
     width: 100px;
+    img {
+      height: 100px;
+    }
   }
-  
+
   @media (max-width: 560px) {
     &.directors li {
       width: 120px;
+      img {
+        height: 120px;
+      }
     }
-    
+
     &.plebs li {
       width: 75px;
+      img {
+        height: 75px;
+      }
     }
   }
 
@@ -70,14 +82,12 @@ ul.faces {
 
     img {
       display: block;
+      object-fit: cover;
       width: 100%;
       margin-bottom: 8px;
       border: 2px solid;
       border-radius: 50%;
       transition: filter .3s;
-
-      -webkit-filter: grayscale(100%);
-      filter: grayscale(100%);
     }
 
     p {
@@ -97,11 +107,6 @@ ul.faces {
 
     &:hover {
       opacity: 1;
-
-      img {
-        -webkit-filter: grayscale(0);
-        filter: grayscale(0);
-      }
 
       p {
         &.name {
