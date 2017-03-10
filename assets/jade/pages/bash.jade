@@ -6,16 +6,16 @@ prepend vars
 
 block heading
   p.aspect
-    span Celebrate 
-  h1.big Bash 
+    span Celebrate
+  h1.big Bash
   p.date 18 August
 
 block description
   p
-    | It's time to party! BASH marks the final event of FOP where you get to celebrate 
-    | and party at a club with your new university friends. Enjoy a night of spectacular 
-    | performances put up by our pageant candidates. The new Mr and Ms SoC will be crowned 
-    | on the very same night! Join in on the fun and games and celebrate the night away. Did 
+    | It's time to party! BASH marks the final event of FOP where you get to celebrate
+    | and party at a club with your new university friends. Enjoy a night of spectacular
+    | performances put up by our pageant candidates. The new Mr and Ms SoC will be crowned
+    | on the very same night! Join in on the fun and games and celebrate the night away. Did
     | we mention that there's afterparty?
   p
     | See you on 18 August at f. Club Singapore! Cheers!
@@ -36,28 +36,28 @@ block main
       div.img(style={ 'background-image': 'url(' + baseUrl + 'img/bash/bash8.jpg' + ')' })
       .caption
         figcaption
-          | Our very own in house DJ playing up the numbers for the house! 
+          | Our very own in house DJ playing up the numbers for the house!
     figure
       div.img(style={ 'background-image': 'url(' + baseUrl + 'img/bash/bash4.jpg' + ')'})
       .caption
         figcaption
-          | Other than performing, our pageants will also go through a series of spontaneous 
-          | Q&A and fun activities with our hosts for the night. Get to know more about the 
+          | Other than performing, our pageants will also go through a series of spontaneous
+          | Q&A and fun activities with our hosts for the night. Get to know more about the
           | finalists while you party the night away!
     figure
       div.img(style={'background-image': 'url(' + baseUrl + 'img/bash/bash6.jpg' + ')'})
       .caption
         figcaption
-          | At the end of Bash, we will crown Mr and Miss SoC with the help of our judges 
-          | and the crowd’s votes. 
+          | At the end of Bash, we will crown Mr and Miss SoC with the help of our judges
+          | and the crowd’s votes.
     figure
       div.img(style={'background-image': 'url(' + baseUrl + 'img/bash/bash7.jpg' + ')'})
       .caption.right#more-about-bash
         //
           This is a hack. Do not do this at home.
         figcaption
-          | After the crowning of Mr and Miss SoC, the event will have officially ended. 
-          | But that is not the end of the night - party away with your fellow 
+          | After the crowning of Mr and Miss SoC, the event will have officially ended.
+          | But that is not the end of the night - party away with your fellow
           | coursemates and seniors at the after party!
 
     section
@@ -67,62 +67,53 @@ block main
         table.testimonial-table
           tr
             td.testimonial-data
-              | BASH officially marks the end of my term as Computing Club’s Freshmen 
+              | BASH officially marks the end of my term as Computing Club’s Freshmen
               | Orientation Projects Director for the year 2016. I am thankful for
-              | BASH as I was able to unwind from summer’s jam-packed fun-filled 
+              | BASH as I was able to unwind from summer’s jam-packed fun-filled
               | activities.
               p
                 i Low Wei Kit, Year 3 Computer Science Student
             td.testimonial-data
-              | BASH was an unforgettable event as it marks the end of summer, which 
-              | also means the semester has officially begun with all the schoolwork 
-              | and projects. The freshmen and I had lots of fun throughout the entire 
-              | event. I am thankful for BASH as I was given an opportunity to perform 
+              | BASH was an unforgettable event as it marks the end of summer, which
+              | also means the semester has officially begun with all the schoolwork
+              | and projects. The freshmen and I had lots of fun throughout the entire
+              | event. I am thankful for BASH as I was given an opportunity to perform
               | on stage. It was my first-ever performance too!
               p
                 i Koh Min Xuan, Year 1 Information Systems Student
           tr
             td.testimonial-data
-              | The experience was memorable as the venue was filled with familiar faces 
-              | and everyone simply wanted to have fun. BASH was a great event to have 
-              | everyone who was involved in the summer projects to gather, let down our 
-              | hair and create memories that would last. I am already looking forward to 
+              | The experience was memorable as the venue was filled with familiar faces
+              | and everyone simply wanted to have fun. BASH was a great event to have
+              | everyone who was involved in the summer projects to gather, let down our
+              | hair and create memories that would last. I am already looking forward to
               | BASH in the following year!
               p
                 i Clarisse Lim, Year 1 Information Systems Student
             td.testimonial-data
-              | I had an eventful summer with NUS School of Computing and BASH was a good 
-              | way to officially end FOP. BASH was a great opportunity to spend time with 
+              | I had an eventful summer with NUS School of Computing and BASH was a good
+              | way to officially end FOP. BASH was a great opportunity to spend time with
               | friends that I have made over summer.
               p
                 i Loh Cai Jun, Year 1 Computer Science Student
 
     section.people
-      h2 Proudly brought to you by
-      //
-        these awesome people
+      h2 Proudly brought to you by these awesome people
 
-      center
-        a(href='http://nuscomputing.com', target='_blank')
-          img(src='img/ComputingClubLogo.png', alt='Computing Club', style="width: 75%;")
+      -var people = faces('img/bash/people', ['Director'])
 
-      //
-        -var people = faces('img/bash/people', ['Director'])
+      ul.faces.directors
+        each person in people[0]
+          li
+            img(src=person.file, alt='')
+            p.name= person.name
+            p.job= person.job
 
-        ul.faces.directors
-          each person in people[0]
-            li
-              img(src=person.file, alt='')
-              p.name= person.name
-              p.job= person.job
-        
-        ul.faces.plebs
-          each person in people[1]
-            li
-              img(src=person.file, alt='')
-              p.name= person.name
-              p.job= person.job
+      ul.faces.plebs
+        each person in people[1]
+          li
+            img(src=person.file, alt='')
+            p.name= person.name
+            p.job= person.job
 
       include ../partials/credit
-    
-
