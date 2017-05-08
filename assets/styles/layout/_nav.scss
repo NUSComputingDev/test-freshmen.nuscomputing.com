@@ -189,7 +189,7 @@ nav.global {
     color: #fff;
     
     transition: all .3s;
-    background: url('#{$image-base}/logo-white.png') left 20px center / auto 80% no-repeat;
+    background: url('#{$image-base}/logo-white.jpeg') left 20px center / auto 80% no-repeat;
     
     &:before {
       content: '';
@@ -200,7 +200,7 @@ nav.global {
       top: 0;
       bottom: 0;
       
-      background: url('#{$image-base}/logo.png') left 20px center / auto 80% no-repeat;
+      background: url('#{$image-base}/logo.jpeg') left 20px center / auto 80% no-repeat;
       transition: opacity .3s;
       opacity: 0;
     }
