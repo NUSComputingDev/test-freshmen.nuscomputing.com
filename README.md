@@ -1,6 +1,6 @@
 # NUS Computing Freshmen Orientation Project 2017 Website 
 
-![](http://freshmen.nuscomputing.com/img/logo.png) 
+<img src="http://freshmen.nuscomputing.com/img/logo.png" height="100px">
 
 ## FOP 2017 - *Tempus Nova* 
 
