@@ -1,13 +1,13 @@
-# NUS Computing Freshmen Orientation Project 2016 Website 
+# NUS Computing Freshmen Orientation Project 2017 Website 
 
-![](https://meebleforp.com/projects/fop/img/logo.png) 
+![](http://freshmen.nuscomputing.com/img/logo.png) 
 
-## FOP 2016 - *Virtutem Quattuor* 
+## FOP 2017 - *Tempus Nova* 
 
 Production site: http://freshmen.nuscomputing.com/  
-Staging site: https://meebleforp.com/projects/fop/
+Staging site (2016 version): https://meebleforp.com/projects/fop/
 
-This repo contains the source code to build the SoC FOP 2016 website. 
+This repo contains the source code to build the SoC FOP 2017 website. 
 The site is largely static, written in Jade and SASS with Bootstrap, a touch of 
 JavaScript with jQuery and built with Gulp. Pull requests welcome!  
 
