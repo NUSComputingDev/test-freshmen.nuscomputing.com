@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>FLAG | FOP 2018 | NUS Computing</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700%7CLato:400,900">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200&amp;text=2017">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://freshmen.nuscomputing.com/css/app.css">
+		<link rel="icon" href="https://freshmen.nuscomputing.com/favicon.ico">
+		<!-- 
+		If you're reading the source code, I'd just like to let you know that 
+		 book horse is best horse       ;jjjt                      :;,.              
+		                                  jt;;tj:                  .jt;;ijjt           
+		                   .ijGDEEEEEDGLjiji;;;jj.                 jj;;;;;;jj;         
+		             .jKWWKKEEEEEEEEEEKEKEji;;;;tjGKDLi,.         .jj;;;;;;;;jj:       
+		           ;KWWEEEEEEEEEEEEEEEEKEEji;it;;jjGKKKKWWWWWWKKEEGjt;;;;;;;;;iji      
+		         LWWEEEEEEEEEEEEEEEKEEWEEEji;;;;;;tjEDDDDDfffLEEEWDji;;;;;;;t;;;jj     
+		       ,WWEEEEEEEEEEEEEEEEWEEKEEEEji;;;;;;tjDDDDDffffEEEEWWjt;;;;;;;;j;;;jt    
+		      LWKEEEEEEEEEEEEEEEEKEEKEEEEEjt;;;;jiDDDDDfffffEEEEEKWLj;;;;;;;;ij;;;j;   
+		     GWKEEEEEEEEEEEEEEEEKEEEKEEEEEjj;;;;tDDDDDfffffDEEEEKEWWj;;;;;;;;;j;;;tj   
+		    tWKEEEEEEEEEEEEEEEEKEEEWEEEEEEjj;;;DDDDDDffffffEEEEEKEEWWi;;;;;;;;tt;;;jj  
+		   .KWEEEEEEEEWEEEEEEEEEEEEEEEEEEEjj;;fDDDDDLffffffEEEEEEKEEKWE;;;;;;;;t;;;jj  
+		   KKEEEEEEEKWWEEEEEEEWEEEKEEEEEEEGjtGDDDDDDfffffffEEEEEEEEEEEKKWL,;;;;i;;;tj: 
+		   WWEEEEEEEWWWEEEEEEEKEEEKEEEEEEEEjtDDDDDDLfffffffEEEEEEEKEEEEEKWWWLi;,;;;ij, 
+		  DWEEEEEEEWWWWEEEEEEEEEEEEEEEEEEEEjDDDDDDDjfffffffjEEEEEEEEKEEEEEEEEKKWWWWWWE 
+		  KWEEEEEEEWKWWEEEEEEEEEEKEEEEEEEEEDDDDDDDGfffffffffLEEEEEEEEEEEEEEEEEEEEKWWf  
+		 ;WKEEEEEEKWjWWEEEEEEEKEEWEEEEEEEEEDDDDDDDffffffffffffEEEEEEEEKEEEEEEKWWWf,ji  
+		 DWEEEEEEEWW,KWEEEEEEEWEEKEEEEEEEEDDDDDDDDjjjjjjffffffLEEEEEKKKWWWWWWWW,;;jj   
+		 KWEEEEEEEWW,;WKEEEEKKKWWKKKKWWKKKKKEEEEEEEEEEEEEEEDDDWDjKWWWKEWWWE.:E;;;#t    
+		 KWEEEEEEEWW,,WWWWKKGfj#KfttG#Kt;;;;;;;;;;;;;;;;;;;;;,K WW##     .KKtiWDL,     
+		 WWEEEEEEEWK,;;;;;t#L#     KWWKD#W,;;;;;;;;;;;;;;;;;;j.WW##W        KK,;tj     
+		.WWEEEKWWKGj;;Gt;;;;#     KWW    ,#t;;;;;;;;;;;;;;;;;DGK####t        EE;;j,    
+		.WWKWWE;   tj;;iK#KEL    LKKK     .#G;;;;;;;;;;;;;;;;EEE#####i       :D,;jt    
+		.WD:        :jf;;;;L     KEEE,      GD;;;;;;;;;;;;;;;GDK#####LGE,    KDj;jj    
+		              :DWWW#     DDDW#L      #f;;;;;;;;;;;;;;jDE####:   D#####DEitj    
+		                 jj;     EDDWKLDW;    #,;;;;;;;;;;;;;,KD##############jLttfG.  
+		                 tj;:    GDDE    E#####G;;;;;;;;;;;;;;#DW############KjEKjj    
+		                  jj;     EDD###########,;;;;;;;;;;;;;fiDD###########,,;;jj    
+		                  ij,:    .jfj##########G;;;;;;;;;;;;;,WLDD#########DG;;;j,    
+		                  fij,     .f,,L#########;;;;;;tjjt;;;;,  DDDDKWKEDDi;;;jt     
+		                    WEL      ;,,E########;;;;i;;;;;;;;;;t   jDDDDDj;;;;tj      
+		                   : tGL.      fDDDDDEEDD,;;;;;;;;;;;i;;;;;;;;;;;;;;;;ij:      
+		                      jj;;       iDDDDDDf,;;;;;;;;;;;j;;;;;;;;;;;;;;;tj.       
+		                       .jj;;;.        :;;;;;;ti;;;;;;;;j;;;;;;;;;;;;jt         
+		                         tji;;;;;;;;;;;;;;;;;;;;;;;;;;j;;;;;;;;;;;jj:          
+		                           ,jj;;;;;;;;;;;;;;;j;;;;;;jj;;;;;;;;;ijj.            
+		                             ,jjt;;;;;;;;;;;;;ijjjt;;;;;;;;;;jjfKK             
+		                                 :ijjt;;;;;;;;;;;;;;;;;itjjj;WKEWK             
+		                                     ijjjjjjjjttjjjjjjjt;;;;iWEEKW             
+		                                     tj;;;;;;;;;;;;;;;,W,;;,WWEEEWi            
+		                                     jt;;;;;;;;;;;;;;;jWWEjWWEEEEWK            
+		                                     j;;;;;;;;;;;;;;;;WWEEEEEEEKEEWL -->
+	</head>
+	<body class="event event-flag">
+		<nav class="global"><a href="https://freshmen.nuscomputing.com/" class="logo">
+				<h1><span class="word word-f">F<span class="letters">reshmen </span></span><span class="word word-o">O<span class="letters">rientation </span></span><span class="word word-p">P<span class="letters">rojects </span></span><span class="year">2018</span></h1></a>
+			<button class="btn menu-btn"><i aria-hidden="true" class="fa fa-bars"></i><span class="sr-only">Open Menu</span></button>
+			<button class="btn show-menu"><span class="label">Show Menu</span><i aria-hidden="true" class="fa fa-chevron-right"></i></button>
+			<div class="full-only">
+				<ul class="nav">
+					<li><a href="https://freshmen.nuscomputing.com/fsc" class="btn btn-white"><abbr title="Freshmen Social Camp">FSC</abbr></a></li>
+					<li><a href="https://freshmen.nuscomputing.com/fow" class="btn btn-white"><abbr title="Freshmen Orientation Week">FOW</abbr></a></li>
+					<li><a href="https://freshmen.nuscomputing.com/rag" class="btn btn-white"><span>RAG</span></a></li>
+					<li><a href="https://freshmen.nuscomputing.com/flag" class="btn btn-white"><span>FLAG</span></a></li>
+					<li><a href="https://freshmen.nuscomputing.com/bash" class="btn btn-white"><span>BASH</span></a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="flag hero">
+			<div class="heading">
+				<p class="aspect"><span>Volunteer</span></p>
+				<h1 class="big">FLAG</h1>
+				<p class="date">8 August</p>
+			</div>
+			<div class="description"> 
+				<p>
+					As part of NUSSU RAG & FLAG event, FLAG provides students with the 
+					opportunity to give back to society. Apart from FLAG day which is a 
+					one day activity for students to go to designated locations around 
+					Singapore for fundraising, Beneficiary Engagement Day (BEDs) are also 
+					organized for students to interact with our beneficiaries. All of the 
+					funds raised will go to our beneficiary – Fernvale Gardens School – 
+					to improve the student welfare and support their operations. We 
+					encourage you to join us as a volunteer to interact with our 
+					beneficiary, engage in fun-filled activities and have a good time 
+					with the students! This will make your FLAG day experience more 
+					meaningful knowing who you’re really flagging for! 
+				</p>
+			</div>
+		</div>
+		<figure class="testimonial">
+			<blockquote>
+				It had been quite some time since I’ve wanted to do something 
+				meaningful in my life. Thus, being involved with Movement for the 
+				Intellectually Disabled of Singapore (MINDS) during the Beneficiary 
+				Day 2017 gave me a great opportunity to help children who were not 
+				as fortunate as me. It warms my heart when I saw the intellectually 
+				disabled children smile and were having fun while enjoying the 
+				activities that we’ve prepared for them in school. This made me 
+				realized that genuinely spending time with them brings simple 
+				happiness to them. Nevertheless, I hope to continue to volunteer 
+				at MINDS for many semesters to come as it always feels good 
+				volunteering out of goodwill!
+			</blockquote>
+			<figcaption>Gervaise Ang, Year 1 Computer Engineering Student</figcaption>
+		</figure>
+		<section><a href="#more-about-flag" class="btn btn-primary btn-lg read-more">Click here to read more about FLAG from your seniors!</a></section>
+		<section class="gallery">
+			<figure>
+				<div style="background-image:url(https://freshmen.nuscomputing.com/img/flag/FLAG2.jpg)" class="img"></div>
+				<div class="caption right">
+					<figcaption>
+						RAG & FLAG isn’t complete without our Flag component. This 
+						year, we will be planning a lineup of activities and games 
+						for our residents at Fernvale Gardens School. Join us in 
+						this meaningful day as we give back to the society. We will 
+						also be having a Flag day in August for you to do a little 
+						something for our beneficiary.
+					</figcaption>
+				</div>
+			</figure>
+			<figure>
+				<div style="background-image:url(https://freshmen.nuscomputing.com/img/flag/FLAG3.jpg)" class="img"></div>
+				<div class="caption">
+					<figcaption>
+						Beyond raising support for our beneficiaries, FLAG also presents 
+						us the opportunity to interact with the students of Fernvale Garden 
+						School. Come to give your time and attention to these students, and 
+						leave with your heart even fuller than before! 
+					</figcaption>
+				</div>
+			</figure>
+			<figure>
+				<div style="background-image:url(https://freshmen.nuscomputing.com/img/flag/FLAG4.jpg)" class="img"></div>
+				<div class="caption right">
+					<figcaption>
+						You get to enjoy the day with your friends, and at the same time, 
+						spreading love and care to the children. 
+					</figcaption>
+				</div>
+			</figure>
+			<figure>
+				<div style="background-image:url(https://freshmen.nuscomputing.com/img/flag/FLAG5.jpg)" class="img"></div>
+				<div class="caption">
+					<figcaption>
+						This year, we have organised two Beneficiary Engagement Days, 
+						one after FSC and another before FOW. Join us in the 1st session 
+						as an OG to strengthen your budding friendships, or take this 
+						opportunity to know your OG mates before the actual FOW camp 
+						starts in the 2nd session! 
+					</figcaption>
+				</div>
+			</figure>
+			<figure>
+				<div style="background-image:url(https://freshmen.nuscomputing.com/img/flag/FLAG6.jpg)" class="img"></div>
+				<div class="caption">
+					<figcaption>
+						The completed palm print rainbow and a final group shot to end 
+						the day! The mass palm print rainbow created with the students 
+						last year represents hope and love, the two values we hold for Flag! 
+					</figcaption>
+				</div>
+			</figure>
+			<figure>
+				<div style="background-image:url(https://freshmen.nuscomputing.com/img/flag/FLAG7.jpg)" class="img"></div>
+				<div id="more-about-flag" class="caption">
+					<!--This is a hack. Do not do this at home.
+					-->
+					<figcaption>
+						A final photo to wrap up the FLAG experience, but the memories 
+						live on. We invite you to join us on this meaningful journey in 
+						2018! Hand in hand, let’s start by making a small difference in 
+						whatever ways we can, as one SoC. 
+					</figcaption>
+				</div>
+			</figure>
+		</section>
+		<section>
+			<center>
+				<h2>What your seniors have to say about FLAG!</h2>
+				<table class="testimonial-table">
+					<tr>
+						<td class="testimonial-data">
+							BED was a meaningful experience and left me with deep memories 
+							while I embarked my new journey in NUS School of Computing, 
+							giving back to the society. After the first engagement, it was 
+							an eye opener for me to see how the caregivers and teachers 
+							catered to different children with different needs and adjust 
+							their attitude towards them accordingly. I must admit it was not
+							easy as I was not trained nor fully prepared to deal with 
+							situations where there’s a sudden mental breakdown which I 
+							experienced it in my first engagement. I felt regretful as I 
+							do not know what to do. Hence, I observed and learnt as much 
+							as I could from the teachers and make an improvement in myself 
+							to better cater to these children during my second engagement 
+							experience. Overall, BED gave me an insightful learning 
+							experience and things I never once knew about these children. 
+							I learnt so much about their needs and the difficulties in 
+							portraying their feelings up front as well as discovering the 
+							distinct talent in each child.
+							<p><i>Rachel Tan, Year 1 Computer Science Student</i></p>
+						</td>
+						<td class="testimonial-data">
+							FLAG and the Beneficiary Engagement Day (BED) is an opportunity 
+							that you will have to raise funds for and interact with special 
+							needs children from Fernvale Gardens School. In BED, we were able 
+							to interact with them, understand them, feel for them. They were 
+							so happy to welcome us! Their cheery laughter was contagious, and 
+							it’s really the simple things that one remembers like the way they 
+							called us Kor Kor and Jie Jie as they invited us to play with them. 
+							And this was a timely reminder for us as we embarked on a new 
+							chapter in life. You have two hands; one is for helping yourself 
+							and the other is for helping others. 
+							<p><i>Nicklaus Ong, Year 1 Business Analytics Student</i></p>
+						</td>
+					</tr>
+					<tr>
+						<td class="testimonial-data">
+							I am very thankful that BED was organized for us as it provided 
+							me with an opportunity to give back to the community. Spending time 
+							with the less privileged children made me realize the little things 
+							I often take for granted, which motivates me to make the best out of 
+							the short session I have with them by bringing joy to their lives. 
+							Upon interacting with these children, FLAG day became more meaningful 
+							for me because I know who I am flagging for and it encouraged me to 
+							do my best for these children. I am glad to know that SOC has 
+							organized this meaningful CIP activity and I do hope that SOC can 
+							organize more of such meaningful engagement sessions. 
+							<p><i>Koh Zhi Ming, Year 1 Information Systems Student</i></p>
+						</td>
+						<td class="testimonial-data">
+							The Beneficiary Engagement Day (BED) is a great opportunity to 
+							contribute back to the community. As volunteers, we get to interact 
+							with these students and better understand them. Teachers from Fernvale 
+							Gardens School are extremely knowledgeable whenever us volunteers have 
+							doubts in approaching the students. Volunteering for BED reminds us of 
+							the things that we often take for granted for and allows us to 
+							appreciate the little things in life. 
+							<p><i>Nivian Lee, Year 2 Information Systems Student</i></p>
+						</td>
+					</tr>
+				</table>
+			</center>
+		</section>
+		<section class="people">
+			<h2>Proudly brought to you by these awesome people</h2>
+			<ul class="faces directors">
+				<li><img src="https://freshmen.nuscomputing.com/img/flag/people/00 Tan Wei Li - Project Director.jpg" alt="">
+					<p class="name">Tan Wei Li</p>
+					<p class="job">Project Director</p>
+				</li>
+				<li><img src="https://freshmen.nuscomputing.com/img/flag/people/01 Zhao Junru - Vice Project Director.jpg" alt="">
+					<p class="name">Zhao Junru</p>
+					<p class="job">Vice Project Director</p>
+				</li>
+			</ul>
+			<ul class="faces plebs">
+				<li><img src="https://freshmen.nuscomputing.com/img/flag/people/02 Kerryn Eer - Logistics.jpg" alt="">
+					<p class="name">Kerryn Eer</p>
+					<p class="job">Logistics</p>
+				</li>
+				<li><img src="https://freshmen.nuscomputing.com/img/flag/people/03 Ong Si Ying - Marketing.jpg" alt="">
+					<p class="name">Ong Si Ying</p>
+					<p class="job">Marketing</p>
+				</li>
+				<li><img src="https://freshmen.nuscomputing.com/img/flag/people/04 Ong Yan Zhi - Programs.jpg" alt="">
+					<p class="name">Ong Yan Zhi</p>
+					<p class="job">Programs</p>
+				</li>
+			</ul>
+			<p class="credit">Background pattern <a href="http://subtlepatterns.com/symphony/">Symphony</a> from <a href="http://subtlepatterns.com/">subtlepatterns.com</a> used under <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a></p>
+		</section>
+		<footer class="global">
+			<div class="bottom-call">
+				<p class="block-text text-center">Subscribe to the mailing list to get the first hand information!</p>
+				<div class="call dark"><a href="http://tiny.cc/FOP2018MailingList" target="_blank" class="btn btn-primary btn-lg">Join Mailing List here</a></div>
+			</div>
+			<p class="icons"><a href="mailto:fop@nuscomputing.com"><i aria-hidden="true" class="fa fa-envelope"></i><span class="label">Email Us</span></a><a href="https://www.youtube.com/channel/UCu-OQvWHAVHtZZ_1U5ODhAg"><i aria-hidden="true" class="fa fa-youtube"></i><span class="label">Our YouTube Channel</span></a><a href="https://www.facebook.com/SoCFOP/"><i aria-hidden="true" class="fa fa-facebook-official"></i><span class="label">Follow us on Facebook</span></a><a href="https://www.instagram.com/socfop"><i aria-hidden="true" class="fa fa-instagram"></i><span class="label">Follow us on Instagram</span></a><a href="https://github.com/NUSComputingDev/freshmen.nuscomputing.com"><i aria-hidden="true" class="fa fa-github"></i><span class="label">Fork this on GitHub</span></a></p>
+			<div class="copyright">
+				<p>A project by <a href="http://nuscomputing.com">NUS Students' Computing Club</a>. Last updated 
+					<time title="2018-01-11T00:41:08+08:00">Jan 11 2018, 12:41:08am. </time>
+				</p>
+				<p>
+					 
+					Site designed and coded by <a href="https://github.com/ZhangYiJiang/">Zhang Yi Jiang, </a>and maintained by the NUS Students' Computing Club IT cell.<br>Video editing by Wang Xien Dong. 
+					Logo design by Rebecca Tan.
+				</p>
+			</div>
+		</footer>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		<script src="https://freshmen.nuscomputing.com/js/app.js"></script>
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q || []).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			 
+			ga('create', 'UA-74969540-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+	</body>
+</html>
