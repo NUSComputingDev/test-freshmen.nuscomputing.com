@@ -1,7 +1,7 @@
 extends ../layout/events
 
 prepend vars
-  - var event = 'Freshman Orientation Week'
+  - var event = 'Freshmen Orientation Week'
   - var eventShort = 'fow'
 
 block heading
@@ -12,11 +12,19 @@ block heading
 
 block description
   p
-  | Hey you! Are you a Freshman of Computing? We need your help! 
-  | Darkness has taken over School of Computing. 
+  | Hey you! Are you a Freshman of Computing?
+  br
+  | We need your help! 
+  br
+  | Darkness has taken over School of Computing.
+  br
   | In order to take it back we are assembling a team.
+  br
   | Forge camaraderie with your fellow teammates!
-  | Will you stand by and watch Computing fall? Or will you be the hero to save us all!
+  br
+  | Will you stand by and watch Computing fall?
+  br
+  | Or will you be the hero to save us all!
   
 block main
   figure.testimonial
@@ -26,7 +34,7 @@ block main
       | activities planned in FOW. By the end of the camp, I had already found 
       | people I know I can count on to make university life much more exciting! 
       | This is a camp that freshmen shouldn't miss! 
-    figcaption Ysabella, Year 1 Computer Science Student
+    figcaption Ysabella Tan, Year 1 Computer Science Student
   section
     a.btn.btn-primary.btn-lg.read-more(href='#more-about-fow')
       | Click here to read more about FOW from your seniors!
@@ -57,7 +65,7 @@ block main
         figcaption
           | Sports day at FOW consists of exciting Inter-Faculty Games (IFG) sports 
           | led by our very own sports captains to encourage freshmen to represent 
-          | SOC for IFG!
+          | SoC for IFG!
     figure
       div.img(style={ 'background-image': 'url(' + baseUrl + 'img/fow/FOW5.jpg' + ')' })
       .caption.right

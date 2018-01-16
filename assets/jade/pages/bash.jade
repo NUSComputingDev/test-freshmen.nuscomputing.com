@@ -52,7 +52,15 @@ block main
         figcaption
           | Not only do freshmen attend BASH, seniors take this opportunity to 
           | reminisce their freshmen year and relive wonderful moments that they 
-          | shared together! 
+          | shared together!
+    figure
+      div.img(style={'background-image': 'url(' + baseUrl + 'img/bash/BASH6.jpg' + ')'})
+      .caption
+        //
+          This is a hack. Do not do this at home.
+        figcaption
+          | Watch as your friends showcase their personalities, talents, and wow the 
+          | crowd through their unique performances in a night you won’t forget!
     figure
       div.img(style={'background-image': 'url(' + baseUrl + 'img/bash/BASH4.jpg' + ')'})
       .caption
@@ -61,19 +69,12 @@ block main
           | our judges and the crowd’s votes.
     figure
       div.img(style={'background-image': 'url(' + baseUrl + 'img/bash/BASH5.jpg' + ')'})
-      .caption
+      // This is a hack. Do not do this at home.
+      .caption.right#more-about-bash
         figcaption
           | After the crowning of Mr and Miss SoC, the event will have officially 
           | ended. But that is not the end of the night - party away with your 
           | fellow coursemates and seniors at the after party!
-    figure
-      div.img(style={'background-image': 'url(' + baseUrl + 'img/bash/BASH6.jpg' + ')'})
-      .caption.right#more-about-bash
-        //
-          This is a hack. Do not do this at home.
-        figcaption
-          | Watch as your friends showcase their personalities, talents, and wow the 
-          | crowd through their unique performances in a night you won’t forget!
 
     section
       center
@@ -82,10 +83,10 @@ block main
         table.testimonial-table
           tr
             td.testimonial-data
-              | As a freshman, BASH was a great way to start off my uni life - music, 
+              | As a freshman, BASH was a great way to kickstart my uni life - music, 
               | dance, friends and fun!! It was also a great way to wrap up my orientation 
               | with fellow students of SoC as I got to see my friends having fun 
-              | performing on stage! You'll FOMO if you miss it!
+              | performing on stage! You'll FOMO (Fear of Missing Out) if you miss it!
               p
                 i Teh Wen Yi, Year 1 Computer Science Student
             td.testimonial-data
