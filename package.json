@@ -17,6 +17,10 @@
     "yargs": "^4.6.0"
   },
   "scripts": {
+    "build": "gulp build --env local",
+    "serve": "gulp serve",
+    "assets": "gulp assets",
+    "production": "gulp build --env production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

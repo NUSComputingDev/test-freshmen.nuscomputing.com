@@ -88,6 +88,7 @@ body.event {
     
     &.rag {
       background-image: url('#{$image-base}/rag/cover.jpg');
+      background-position: bottom center;
       .aspect span { background: $brand-rag; }
     }
     
@@ -100,6 +101,7 @@ body.event {
     
     &.fsc {
       background-image: url('#{$image-base}/fsc/cover.jpg');
+      background-position: center -180px;
       .aspect span { background: $brand-fsc }
     }
     
@@ -107,11 +109,13 @@ body.event {
       flex-direction: row-reverse;
       .heading { text-align: right }
       background-image: url('#{$image-base}/fow/cover.jpg');
+      background-position: top center;
       .aspect span { background: $brand-fow }
     }
     
     &.bash {
       background-image: url('#{$image-base}/bash/cover.jpg');
+      background-position: top center;
       .aspect span { background: $brand-bash }
     }
   }

@@ -67,6 +67,9 @@ let jadeUtils = {
 
     partitions.forEach((search, i) => {
       let splitted = _.partition(groups[i], (person) => {
+        if (person.job === "Creative Director") {
+          return false;
+        }
         return person.job.includes(search);
       });
 

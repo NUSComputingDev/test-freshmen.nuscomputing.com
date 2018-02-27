@@ -3,18 +3,20 @@ extends ../layout/master
 block vars
   - var title = 'Freshmen Orientation Project 2018 | NUS Computing';
   - var bodyClass = 'index';
-  - var description = 'NUS School of Computing Freshmen Orientation Projects presents Tempus Nova. Join us to experience a summer like never before!'; 
-    
+  - var description = 'NUS School of Computing Freshmen Orientation Projects presents ad infinitum. Join us to experience a summer like never before!';
+
 block header
   .hero
     .content
       h1
         | Get first hand information when sign ups open
       .call
-          a.btn.btn-primary.btn-lg(href='http://tiny.cc/FOP2018MailingList', target='_blank')
+          a.btn.btn-primary.btn-lg(href='https://tiny.cc/FOP2018MailingList', target='_blank')
             | Join Mailing List here
           a.btn.btn-primary.btn-lg(href='https://www.facebook.com/SoCFOP/', target='_blank')
             | Like us on Facebook
+          a.btn.btn-primary.btn-lg(href='https://www.instagram.com/socfop/', target='_blank')
+            | Follow us on Instagram
     .video-overlay(data-video=baseUrl + 'video/background.mp4')
       button(type='button').btn.btn-default
         i.fa.fa-pause
@@ -24,63 +26,54 @@ block header
 block main
   .block-text.intro
     p
-      | Are you an incoming freshman who wants to find out more about the school? 
+      | Are you an incoming freshman who wants to find out more about the school?
       | Or do you simply want to make some friends and have fun?
     p
       | NUS Computing Freshmen Orientation Projects (FOP) 2018 presents to you: 
-      strong Tempus Nova
+      strong ad infinitum
       | . With an exciting lineup of events, we will help you integrate into our
-      | Computing family in no time. At FOP, not only do you get the opportunity to meet 
-      | other incoming freshmen, you will also meet seniors who can provide valuable advice 
-      | to follow you through your University years. Join us this summer for the best 
+      | Computing family in no time. At FOP, not only do you get the opportunity to meet
+      | other incoming freshmen, you will also meet seniors who can provide valuable advice
+      | to follow you through your University years. Join us this summer for the best
       | freshmen experience you’ll ever have!
 
   section.projects
-      // .project-row
+
       a(href=url('fsc')).project.fsc
-        p.aspect 
+        p.aspect
           span Socialize
         h2 Freshmen Social Camp
         p.date 10 to 13 June
-        
         .description
-          p 
-            | Socialise in the summer holidays! Meet new friends from SoC 
+          p
+            | Socialise in the summer holidays! Meet new friends from SoC
             | before University starts!
 
       a(href=url('fow')).project.fow
-        p.aspect 
+        p.aspect
           span Orientate
         h2 Freshmen Orientation Week
-        p.date 29 to 1 August
-        
+        p.date 28 to 31 August
         .description
-          p 
-            | Orientate yourself! Get more familiar with the school 
+          p
+            | Orientate yourself! Get more familiar with the school
             | environment and find out more about school life!
 
-      // .project-row
       a(href=url('rag')).project.rag
-        p.aspect 
+        p.aspect
           span Bond
-        h2
-          | RAG
-
+        h2 RAG
         p.date June to August
-        
         .description
-          p 
-            | Bond together as one SoC family! Construct magnificent 
+          p
+            | Bond together as one SoC family! Construct magnificent
             | floats and dance together to show our SoC spirit!
 
       a(href=url('flag')).project.flag
         p.aspect
           span Volunteer
-        h2
-          | FLAG
-
+        h2 FLAG
         p.date August
-
         .description
           p
             | Volunteer together as one SoC family! Raise funds and
@@ -88,36 +81,35 @@ block main
 
       // .project-row
       a(href=url('bash')).project.bash
-        p.aspect 
-          span Celebrate 
-        h2 Bash 
+        p.aspect
+          span Celebrate
+        h2 Bash
         p.date 24 August
-        
         .description
-          p 
-            | Celebrate the end of Orientation with a blast! Join us 
+          p
+            | Celebrate the end of Orientation with a blast! Join us
             | to crown the next Mr and Ms SoC!
-  
+
   section.timeline-container
     .timeline
       header
-        h2 Timeline of events (Updated 1 Jan 18)
+        h2 Timeline of events (Updated 28 Feb 2018)
 
       h3 June
-      
+
       ul
-        li 
-          .tl-date 10 to 13 
-          .tl-desc Freshmen Social Camp (FSC)
-        
         li
-          .tl-date 18 to 19 
+          .tl-date 10 to 13
+          .tl-desc Freshmen Social Camp (FSC)
+
+        li
+          .tl-date 18 to 19
           .tl-desc RAG Exposure Program (REP)
 
         li
           .tl-date 20
           .tl-desc RAG Commencement
-          
+
         li
           .tl-date TBC
           .tl-desc FOP Beneficiary Engagement I
@@ -127,36 +119,36 @@ block main
         li
           .tl-date TBC
           .tl-desc FOP Beneficiary Engagement II
-          
+
         li
-          .tl-date 27
+          .tl-date 26
           .tl-desc Academic Day
-          
-        li 
-          .tl-date 29 to 1
+
+        li
+          .tl-date 28 to 31
           .tl-desc Freshmen Orientation Week (FOW)
 
       h3 August
 
       ul
-        li 
-          .tl-date TBC
-          .tl-desc Dean’s Welcome Tea
-          
-        li 
-          .tl-date TBC
+        li
+          .tl-date 6
           .tl-desc FLAG Day
-          
-        li 
-          .tl-date TBC
+
+        li
+          .tl-date 10
+          .tl-desc Dean’s Welcome Tea
+
+        li
+          .tl-date 11
           .tl-desc RAG Day
-          
-        li 
+
+        li
           .tl-date 24
           .tl-desc BASH
 
         h3 Academics
-        
+
         p
           | For academic related events, please visit 
           a(href='http://www.comp.nus.edu.sg/programmes/ug/freshmen/', target='_blank') here.

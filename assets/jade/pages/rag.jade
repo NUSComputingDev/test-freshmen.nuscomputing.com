@@ -75,7 +75,7 @@ block main
           | to dance where our patient and talented choreographers will introduce you to various genres in dance.
 
     figure
-      div.img(style={ 'background-image': 'url(' + baseUrl + 'img/rag/RAG6.jpg' + ')' })
+      div.img(style={ 'background-image': 'url(' + baseUrl + 'img/rag/REP6.jpg' + ')' })
       .caption
         figcaption
           | Our freshmen preparing for the finale performance during REP. At REP, we have seniors to guide 
@@ -144,7 +144,8 @@ block main
   section.people
     h2 Proudly brought to you by these awesome people
 
-    -var people = faces('img/rag/people', ['Director'])
+    -var people = faces('img/rag/people', ['Director', "Creative"])
+
     ul.faces.directors
       each person in people[0]
         li
@@ -153,7 +154,7 @@ block main
           p.job= person.job
 
     ul.faces.plebs
-      each person in people[1]
+      each person in people[1].concat(people[2])
         li
           img(src=person.file, alt='')
           p.name= person.name
