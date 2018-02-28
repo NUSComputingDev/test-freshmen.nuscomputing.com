@@ -1,7 +1,7 @@
 body.event {
   .hero {
     color: #fff;
-    height: 550px;
+    height: 700px;
     padding: 40px 40px 60px 20px;
     background: #333 no-repeat center / cover;
     position: relative;
@@ -93,16 +93,15 @@ body.event {
     }
     
     &.flag {
-      flex-direction: row-reverse;
-      .heading { text-align: right }
       background-image: url('#{$image-base}/flag/cover.jpg');
       .aspect span { background: $brand-flag; }
+      
     }
-    
     &.fsc {
       background-image: url('#{$image-base}/fsc/cover.jpg');
       background-position: center -180px;
-      .aspect span { background: $brand-fsc }
+      .aspect span { background: $brand-fsc; }
+      .description { margin-bottom: 250px; }
     }
     
     &.fow {
