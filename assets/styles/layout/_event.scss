@@ -99,9 +99,8 @@ body.event {
     }
     &.fsc {
       background-image: url('#{$image-base}/fsc/cover.jpg');
-      background-position: center -180px;
+      background-position: center -120px;
       .aspect span { background: $brand-fsc; }
-      .description { margin-bottom: 250px; }
     }
     
     &.fow {
