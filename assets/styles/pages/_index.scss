@@ -292,4 +292,19 @@ body.index {
       }
     }
   }
+  
+  .comclub-logo {
+    display: block;
+    max-width: 920px;
+    padding: 0 20px;
+    margin: 0 auto;
+
+    img {
+      width: 100%;
+    }
+  }
+  
+  .people h2 {
+    margin-bottom: 20px;
+  }
 }
