@@ -8,36 +8,35 @@ html
 
     if description
       meta(name='description', content=description)
-      
+
     link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700%7CLato:400,900')
-    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200&text=2017')
     link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css")
     link(rel='stylesheet', href=baseUrl + 'css/app.css')
     link(rel='icon', href=baseUrl + 'favicon.ico?v=3')
-    
+
     block head
     include twilight
 
-  body(class=bodyClass) 
+  body(class=bodyClass)
     nav.global
       a.logo(href=baseUrl)
         h1
           span.word.word-f F
-            span.letters reshmen 
+            span.letters reshmen
           span.word.word-o O
-            span.letters rientation 
+            span.letters rientation
           span.word.word-p P
-            span.letters rojects 
+            span.letters rojects
           span.year 2018
-      
+
       button.btn.menu-btn
         i.fa.fa-bars(aria-hidden='true')
         span.sr-only Open Menu
-        
+
       button.btn.show-menu
         span.label Show Menu
         i.fa.fa-chevron-right(aria-hidden='true')
-        
+
       .full-only
         ul.nav
           li: a.btn.btn-white(href=url('fsc'))
@@ -52,9 +51,9 @@ html
             span BASH
 
     block header
-    
+
     block main
-      
+
     footer.global
       div.bottom-call
         p.block-text.text-center
@@ -62,7 +61,7 @@ html
         div.call.dark
           a.btn.btn-primary.btn-lg(href='http://tiny.cc/FOP2018', target='_blank')
             | Alright, count me in!
-      
+
       p.icons
         a(href='mailto:fop@nuscomputing.com')
           i.fa.fa-envelope(aria-hidden='true')
@@ -79,19 +78,19 @@ html
         a(href='https://github.com/NUSComputingDev/freshmen.nuscomputing.com')
           i.fa.fa-github(aria-hidden='true')
           span.label Fork this on GitHub
-      
+
       .copyright
         p
-          | A project by 
+          | A project by
           a(href='http://nuscomputing.com') NUS Students' Computing Club
-          | . Last updated 
-          time(title=moment().format()) #{moment().format('MMM D YYYY, h:mm:ssa')}. 
-        p 
-          | Site designed and coded by 
-          a(href='https://github.com/ZhangYiJiang/') Zhang Yi Jiang, 
+          | . Last updated
+          time(title=moment().format()) #{moment().format('MMM D YYYY, h:mm:ssa')}.
+        p
+          | Site designed and coded by
+          a(href='https://github.com/ZhangYiJiang/') Zhang Yi Jiang,
           | and maintained by the NUS Students' Computing Club IT cell.
           br
-          | Video editing by Wang Xien Dong. 
+          | Video editing by Wang Xien Dong.
           | Logo design by Choo Wenxin.
 
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js')
@@ -102,6 +101,5 @@ html
         | (i[r].q=i[r].q || []).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
         | m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         | })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        | 
         | ga('create', 'UA-74969540-1', 'auto');
         | ga('send', 'pageview');

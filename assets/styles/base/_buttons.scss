@@ -35,7 +35,7 @@
       transform: scaleX(1);
     }
   }
-  
+
   &.dark a {
     &:before {
       background: $brand-secondary;
@@ -48,6 +48,12 @@
 }
 
 .read-more {
-  width: 100%;
+  font-family: $font-family-sans-serif;
+  margin-top: 40px;
+  padding-bottom: 14px;
   white-space: normal;
+
+  @media (max-width: 500px) {
+    display: block;
+  }
 }
