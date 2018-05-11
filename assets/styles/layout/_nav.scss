@@ -37,7 +37,7 @@ nav.global {
     }
 
     a {
-      padding: 24px 24px;
+      padding: 20px 24px;
       width: 100%;
 
       font-size: 20px;
@@ -114,13 +114,13 @@ nav.global {
     left: 0;
     right: 0;
 
-    padding: 12px;
+    padding: 6px 12px;
     background: rgba(0, 0, 0, 0.9);
     white-space: normal;
 
     h1 {
       height: 85px;
-      padding-top: 20px;
+      padding-top: 18px;
       padding-left: 90px;
       font-size: 38px;
       position: absolute;
@@ -174,7 +174,7 @@ nav.global {
       }
 
       .menu-btn {
-        padding: 15px 20px;
+        padding: 12px 20px;
       }
     }
   }
@@ -193,7 +193,10 @@ nav.global {
     color: #fff;
 
     transition: all .3s;
-    background: url('#{$image-base}/logo-white.png') 15px 15px  / auto 70% no-repeat;
+
+    &, &:before {
+      background: url('#{$image-base}/logo-white.png') 15px 8px / auto 80% no-repeat;
+    }
 
     &:before {
       content: '';
@@ -204,7 +207,7 @@ nav.global {
       top: 0;
       bottom: 0;
 
-      background: url('#{$image-base}/logo.png') 15px 15px / auto 70% no-repeat;
+      background-image: url('#{$image-base}/logo.png');
       transition: opacity .3s;
       opacity: 0;
     }

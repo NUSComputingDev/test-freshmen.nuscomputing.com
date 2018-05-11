@@ -19,6 +19,14 @@ $brand-rag: #72BF52;
 $brand-flag: #FF87C3;
 $brand-bash: #FCB81B;
 
+$event-brands: (
+  fsc: $brand-fsc,
+  fow: $brand-fow,
+  rag: $brand-rag,
+  flag: $brand-flag,
+  bash: $brand-bash,
+);
+
 $home-bg: rgba(0, 0, 0, 0.7);
 $body-bg: #f9f9f9;
 
