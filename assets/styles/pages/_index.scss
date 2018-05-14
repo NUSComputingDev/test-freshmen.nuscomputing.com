@@ -21,12 +21,12 @@ body.index {
       color: #fff;
       text-shadow: 0 1px 0 #000;
       background: $home-bg;
-      
+
       @media (max-width: 680px) {
         margin-right: 15px;
       }
     }
-    
+
     .video-overlay {
       position: absolute;
       z-index: 10;
@@ -36,14 +36,14 @@ body.index {
       left: 0;
       opacity: 0;
       background: #000;
-      
+
       button {
         position: absolute;
         bottom: 0;
         right: 0;
       }
     }
-    
+
     video {
       position: absolute;
       width: 100%;
@@ -51,18 +51,18 @@ body.index {
       top: 50%;
       left: 50%;
       transform: translateX(-50%) translateY(-50%);
-      
+
       @media (max-width: 1060px) {
         width: auto;
         height: 100%;
       }
     }
   }
-  
+
   .intro {
     margin: 60px auto 80px;
   }
-  
+
   .projects {
     color: #fff;
     display: flex;
@@ -74,21 +74,11 @@ body.index {
       flex: 1 1 auto;
     }
 
-    @media (max-width: 768px) { // width of 768px of lower -> 1 column
+    @media (max-width: $screen-sm-max) { // width of 768px of lower -> 1 column
       display: block;
     }
-    
-    @media (max-width: $screen-sm) {
-      .project-row {
-        flex-direction: column;
-      }
-      
-      .project {
-        flex: 1 1 auto;
-      }
-    }
   }
-  
+
   .project {
     display: flex;
     // flex: 1 1 50%;
@@ -105,7 +95,7 @@ body.index {
     overflow: hidden;
     color: #fff;
     text-decoration: none;
-    
+
     transition: opacity .3s;
     opacity: .9;
 
@@ -121,16 +111,22 @@ body.index {
     h2 {
       margin-top: 0;
       font-weight: 600;
-      height: 60px;
       line-height: 1;
 
-      @media (min-width: $screen-lg) and (max-width: 1600px) {
+      // Desktop (wide) - two lines
+      height: 64px;
+
+      // Desktop - three lines
+      @media (min-width: $screen-sm-min) and (max-width: 1600px) {
         height: 100px;
-        display: flex;
-        align-items: flex-end;
+      }
+
+      // Tablet / phone landscape - auto (no need to match height since its single column)
+      @media (max-width: $screen-sm-max) {
+        height: auto;
       }
     }
-    
+
     .description p {
       font-size: 22px;
       margin: 20px 0 30px;
@@ -203,31 +199,31 @@ body.index {
   .timeline-container {
     background: rgba($brand-secondary, .1);
   }
-  
+
   .timeline {
     max-width: 640px;
     margin: 0 auto;
     padding: 20px;
-    
+
     header {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
-      
+
       a.btn {
         margin-top: 12px;
       }
     }
-    
+
     h2 {
       color: #999;
     }
-    
+
     h3, .tl-date {
       text-align: right;
     }
-    
+
     h3 {
       font-size: 18px;
       font-weight: bold;
@@ -247,7 +243,7 @@ body.index {
       display: flex;
       margin: 12px 0;
     }
-    
+
     .tl-date, h4, h4 a {
       line-height: inherit;
     }
@@ -262,7 +258,7 @@ body.index {
       flex: 0 0 100px;
       margin-right: 12px;
       font-weight: bold;
-      
+
       .time {
         font-size: 16px;
         display: block;
@@ -285,7 +281,7 @@ body.index {
         text-align: left;
         flex: 0 auto;
         margin-right: 6px;
-        
+
         .time {
           display: inline;
           padding-left: 6px;
@@ -295,5 +291,20 @@ body.index {
       .tl-desc {
       }
     }
+  }
+  
+  .comclub-logo {
+    display: block;
+    max-width: 920px;
+    padding: 0 20px;
+    margin: 0 auto;
+
+    img {
+      width: 100%;
+    }
+  }
+  
+  .people h2 {
+    margin-bottom: 20px;
   }
 }

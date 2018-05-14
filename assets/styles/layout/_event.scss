@@ -20,7 +20,7 @@ body.event {
         font-size: 58px;
         margin: 0;
         font-weight: bold;
-        
+
         &.big {
           font-size: 72px;
         }
@@ -80,29 +80,29 @@ body.event {
         width: auto;
         margin: 20px -20px 0 -20px;
       }
-      
+
       &.rag-flag .description {
         padding-bottom: 40px;
       }
     }
-    
+
+    // Per event customization
     &.rag {
       background-image: url('#{$image-base}/rag/cover.jpg');
       background-position: bottom center;
       .aspect span { background: $brand-rag; }
     }
-    
+
     &.flag {
       background-image: url('#{$image-base}/flag/cover.jpg');
       .aspect span { background: $brand-flag; }
-      
     }
     &.fsc {
       background-image: url('#{$image-base}/fsc/cover.jpg');
       background-position: center -120px;
       .aspect span { background: $brand-fsc; }
     }
-    
+
     &.fow {
       flex-direction: row-reverse;
       .heading { text-align: right }
@@ -110,29 +110,29 @@ body.event {
       background-position: top center;
       .aspect span { background: $brand-fow }
     }
-    
+
     &.bash {
       background-image: url('#{$image-base}/bash/cover.jpg');
       background-position: top center;
       .aspect span { background: $brand-bash }
     }
   }
-  
+
   .testimonial {
     margin: 40px auto;
-    
+
     blockquote {
       font-size: 28px;
     }
-    
+
     figcaption {
       font-size: 22px;
     }
   }
-  
+
   .gallery {
     width: 100%;
-    
+
     div.img {
       height: 800px;
       background: center / cover;
@@ -141,7 +141,7 @@ body.event {
     figure {
       position: relative;
     }
-    
+
     .caption {
       position: absolute;
       bottom: 0;
@@ -153,35 +153,37 @@ body.event {
       figcaption {
         max-width: 700px;
       }
-      
+
       &.right figcaption {
         float: right;
         text-align: right;
       }
     }
-    
+
     @media (max-width: 600px) {
       div.img {
         height: 600px;
       }
     }
   }
-  
-  &.event-fsc .people {
-    border-color: $brand-fsc;
-    h2 { color: $brand-fsc; }
-    img { border-color: $brand-fsc; }
-  }
 
-  &.event-fow .people {
-    border-color: $brand-fow;
-    h2 { color: $brand-fow; }
-    img { border-color: $brand-fow; }
-  }
+  @each $event, $color in $event-brands {
+    &.event-#{$event} {
+      border-color: $color;
+      h2 {
+        color: $color;
+      }
+      img {
+        border-color: $color;
+      }
 
-  &.event-rag .people {
-    border-color: $brand-rag;
-    h2 { color: $brand-rag; }
-    img { border-color: $brand-rag; }
+      .testimonial-more {
+        background: rgba($color, 0.08);
+      }
+
+      .testimonial-more h2 {
+        color: $color;
+      }
+    }
   }
 }
