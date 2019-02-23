@@ -1,31 +1,16 @@
 {
-  "name": "fop",
-  "version": "1.0.0",
-  "description": "",
-  "main": "gulpfile.js",
-  "dependencies": {
-    "bootstrap-sass": "^3.3.6",
-    "browser-sync": "^2.11.1",
-    "gulp": "^3.9.1",
-    "gulp-if": "^2.0.0",
-    "gulp-jade": "^1.1.0",
-    "gulp-newer": "^1.1.0",
-    "gulp-sass": "^3.1.0",
-    "gulp-sourcemaps": "^2.0.0-alpha",
-    "lodash": "^4.11.1",
-    "moment": "^2.13.0",
-    "yargs": "^4.6.0"
-  },
-  "scripts": {
-    "build": "gulp build --env local",
-    "serve": "gulp serve",
-    "assets": "gulp assets",
-    "production": "gulp build --env production",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "yarn": "^1.3.2"
-  }
+    "name": "fop",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "homepage": "https://andyylam.github.io/fopwebsite",
+    "scripts": {
+        "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "gp": "0.0.1",
+        "node-sass": "^4.11.0"
+    }
 }

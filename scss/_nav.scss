@@ -1,0 +1,103 @@
+@import "util";
+
+nav {
+    background: $white;
+    border-radius: 4px;
+    overflow: hidden;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    right: 10px;
+    min-height: auto;
+    max-width: 100%;
+
+    font-size: 17px;
+    line-height: 40px;
+    box-shadow: 0 50px 100px -20px rgba(50, 50, 93, 0.25),
+        0 30px 60px -30px rgba(207, 105, 105, 0.3);
+
+    @keyframes faze2 {
+        from {
+            opacity: 0.95;
+            transform: scale(1);
+            height: inherit;
+        }
+        to {
+            opacity: 0;
+            transform: scale(0.7);
+            height: 0;
+        }
+    }
+    .projects {
+        display: grid;
+        grid-gap: 7px;
+        grid-template-columns: 50px 1fr;
+        grid-template-rows: repeat(8, auto);
+        margin: 20px 20px;
+
+        .sign-up2 {
+            margin-top: 10px;
+            grid-column: span 2;
+            font-size: 14px;
+            background-color: whitesmoke;
+
+            i {
+                color: grey;
+            }
+        }
+
+        .popup-header {
+            grid-column: span 2;
+            color: grey;
+            font-size: 14px;
+            font-weight: 600px;
+        }
+    }
+
+    .projects > a {
+        color: grey;
+        font-weight: 500;
+        font-size: 19px;
+        text-decoration: none;
+        width: auto;
+        align-content: center;
+    }
+
+    .projects > .projectlogo {
+        height: 40px;
+        width: 40px;
+        border-radius: 20%;
+    }
+
+    .projects > .projectlogorag {
+        height: 33px;
+        width: 40px;
+    }
+
+    &.shown {
+        visibility: visible;
+        opacity: 0.95;
+        animation: faze 300ms ease-in-out forwards;
+        transform-origin: top right;
+
+        @keyframes faze {
+            from {
+                opacity: 0;
+                transform: scale(0.7);
+            }
+            to {
+                opacity: 0.95;
+                transform: scale(1);
+            }
+        }
+    }
+
+    &.notshown {
+        animation: faze2 300ms ease-in-out forwards;
+        position: absolute;
+        overflow: hidden;
+        height: 0;
+        transform-origin: top right;
+        z-index: -1;
+    }
+}
