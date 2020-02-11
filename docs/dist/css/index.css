@@ -2112,7 +2112,7 @@ footer {
     right: 0;
     top: 0; }
   .main .fsc-description1 div#bg-img-fow {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/fowpictures/Photo7.jpg) no-repeat center center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/fowpictures/fowheader.jpg) no-repeat center center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -2126,7 +2126,7 @@ footer {
     right: 0;
     top: 0; }
   .main .fsc-description1 div#bg-img-bash {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/bashpictures/highlight2.JPG) no-repeat center center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/bashpictures/bashheader.jpg) no-repeat center center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -2140,7 +2140,7 @@ footer {
     right: 0;
     top: 0; }
   .main .fsc-description1 div#bg-img-rag {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/ragpictures/rag/p2.jpg) no-repeat center center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/ragpictures/rag/ragheader.jpg) no-repeat center center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
