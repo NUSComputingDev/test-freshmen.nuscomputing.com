@@ -272,7 +272,7 @@
     position: absolute;
     max-width: 100%;
     min-width: 100%;
-    min-height: 100%;
+    min-height: 120%;
     z-index: -1;
     overflow: hidden;
     right: 0;
