@@ -1335,7 +1335,7 @@ nav {
   .description2 .foplogo {
     margin-right: 30px;
     width: 150px;
-    height: 120px; }
+    height: 150px; }
   .description2 .d2writeup {
     grid-column: span 2;
     margin: 0px 20px 10px 20px;
@@ -1423,7 +1423,8 @@ nav {
         width: 80px;
         justify-self: center; }
         .main .cards .card img.e-rag {
-          height: 65px; }
+          max-width: 80px;
+          height: auto; }
       .main .cards .card.camp {
         grid-column: span 2; }
   .main .faq {
@@ -1990,14 +1991,14 @@ footer {
     grid-gap: 0; }
     .main .description2 img {
       height: 200px;
-      width: 300px; }
+      width: 200px; }
     .main .description2 .d2header {
       font-size: 25px; }
     .main .description2 .d2writeup {
       font-size: 19px; }
   .main .cards {
     margin-top: 2%;
-    grid-template-columns: repeat(6, 1fr); }
+    grid-template-columns: repeat(5, 1fr); }
     .main .cards .card {
       display: grid;
       grid-gap: 10px;
