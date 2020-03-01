@@ -2414,3 +2414,8 @@ body {
   margin-right: 0;
   margin-bottom: 0;
   scroll-behavior: smooth; }
+
+
+.faq a {
+  color: #242325;
+}
