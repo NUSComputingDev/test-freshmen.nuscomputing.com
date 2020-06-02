@@ -1,0 +1,31 @@
+@import "camphor";
+@import "description1";
+@import "util";
+@import "header";
+@import "nav";
+@import "description2";
+@import "cards";
+@import "footer";
+@import "projectpage";
+
+* {
+    font-family: "Camphor", "Open Sans", "Segoe UI", sans-serif;
+    color: $white;
+    box-sizing: border-box;
+}
+
+a {
+    transition: all 0.2s ease;
+    transition-property: transform, opacity, color, border-color,
+        background-color;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    scroll-behavior: smooth;
+}
