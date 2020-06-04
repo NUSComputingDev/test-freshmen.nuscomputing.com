@@ -2259,13 +2259,18 @@ footer {
     grid-column: span 3;
     cursor: pointer; }
     .testimonials label.timeline {
-      grid-column: span 4; }
+      grid-column: span 4;
+      visibility: hidden;
+    }
     .testimonials label.bash {
-      grid-column: span 6; }
+      grid-column: span 6;
+    }
     .testimonials label :hover {
+
       color: #789;
       cursor: pointer; }
   .testimonials #tab1:checked ~ #content1,
+
   .testimonials #tab2:checked ~ #content2,
   .testimonials #tab3:checked ~ #content3,
   .testimonials #tab4:checked ~ #content4 {
