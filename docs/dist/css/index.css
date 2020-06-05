@@ -288,6 +288,41 @@
     line-height: 28px;
     max-width: 80%; }
 
+.sign-up-eacad {
+  padding: 15px;
+  margin-top: 30px;
+  margin-right: 5px;
+  height: 60px;
+  min-width: 165px;
+  background: #348aa7;
+  outline: none;
+  color: whitesmoke;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 15px;
+  border-radius: 3px;
+  box-shadow: 0 5px 0px #348aa7;
+  border-bottom: 2px solid #30809b;
+  width: 100px;
+  text-align: center;
+  padding-bottom: 10px;
+  text-decoration: none;
+  align-self: flex-start; }
+  .sign-up-eacad:hover {
+    background: #2e7a94;
+    box-shadow: 0 4px 1px #2e7a94;
+    border-bottom: 2px solid #2a7088;
+    transition: all 0.1s ease-in; }
+  .sign-up-eacad:active {
+    transform: translateY(4px);
+    border-bottom-width: 2px;
+    box-shadow: none; }
+  .sign-up-eacad.projpage {
+    border-top: 1px solid lightgrey;
+    margin: auto;
+    display: block;
+    margin-bottom: 40px; }
+
 .sign-up1 {
   padding: 15px;
   margin-top: 30px;
